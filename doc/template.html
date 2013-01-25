@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html>
+  <head>
+    <title>XMLVM - Tutorials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <script>
+      var userAgent = navigator.userAgent.toLowerCase();
+      var isMobile = userAgent.indexOf('android') > -1 ||
+                     userAgent.indexOf('ipad') > -1;
+    </script>
+    <script type="text/javascript" src="js/iscroll-lite.js"></script>
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushJava.js"></script>
+    <script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+    <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="css/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="css/smoothness/jquery-ui-1.8.14.custom.css" rel="stylesheet" />	
+    
+	<link  href="http://fonts.googleapis.com/css?family=Pacifico:regular&v1" rel="stylesheet" type="text/css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+	<style>
+	  body {
+	    font-family:Arial;
+	    background-color:#444;
+		border:0;
+		margin:0;
+		overflow:hidden;
+	  }
+	  
+	  a {
+	    color:white;
+		text-decoration:none;
+	  }
+	  
+	  #layout {
+	    width:100%;
+		height:100%;
+	  }
+
+	  #content table {
+	    width:100%;
+		height:100%;
+	  }
+
+      #slides,#code {
+	    width:50%;
+	  }
+	  
+	  #slide {
+	    width:100%;
+	  }
+	  
+	  #code iframe{
+		width:100%;
+	    height:100%;
+		background:white;
+	  }
+	  
+	  #title {
+	    font-family:'Pacifico';
+		font-size:23px;
+	  }
+
+	  #navigation {
+	    vertical-align:top;
+		background-color:#ddd;
+		width:190px;
+		text-align:center;
+	  }
+	  
+	  #tutorialList {
+	    overflow:auto;
+	  }
+	  
+	  .platformTitle {
+	    font-family:'Open Sans Condensed';
+	    font-size:22px;
+	    text-align:center;
+	    font-weight:bold;
+	    padding:5px;
+	  }
+	  
+	  .ios .platformTitle {
+		text-shadow: 0 0 0.2em #559;
+		-webkit-text-shadow: 0 0 0.2em #559;
+		-moz-text-shadow: 0 0 0.2em #559;
+	  }
+
+	  .android .platformTitle {
+		text-shadow: 0 0 0.2em #595;
+		-webkit-text-shadow: 0 0 0.2em #595;
+		-moz-text-shadow: 0 0 0.2em #595;
+	  }
+
+	  .tutorialTitle {
+	    font-family:'Open Sans Condensed';
+		padding:5px;
+		font-size:15px;
+		text-align:left;
+	  }
+	  
+	  .selectedEntry .tutorialTitle {
+	    color:red;
+	    font-weight:bold;
+	  }
+
+	  .tutorialEntry {
+		background:white;
+		margin:8px;
+		border-radius:10px 0px;
+		box-shadow: 0 0 5px 2px #999;
+		-webkit-box-shadow: 0 0 5px 2px #999;
+		transition: 0.2s linear;
+		-webkit-transition: 0.2s linear;
+		-moz-transition: 0.2s linear;
+	  }
+	  
+	  .tutorialEntry * {
+	    cursor:pointer;
+	  }
+	  
+	  .tutorialEntryHover:hover {
+	    box-shadow: 0 0 6px 2px #822;
+	    -webkit-box-shadow: 0 0 6px 2px #822;
+	    -moz-moz-shadow: 0 0 6px 2px #822;
+		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+	  }
+	  
+	  .tutorialEntry .description {
+		color:white;
+		border-radius:10px 0px;
+		font-size:11px;
+		padding:5px;
+		text-align:left;
+	  }
+	  
+	  .ios .tutorialEntry .description {
+	    background:#115;
+	  }
+
+	  .android .tutorialEntry .description {
+	    background:#151;
+	  }
+
+	  .syntaxhighlighter {
+	    font-size:12px !important;
+	  }
+	  .ui-tabs .ui-tabs-nav li {
+	    font-size:12px;
+        font-weight:normal !important;
+	  }
+	  
+	  .ui-tabs .ui-tabs-panel {
+	    padding:0 !important;
+	  }
+	</style>
+  </head>
+  <body>
+    <script>
+	  var slidesUrl = {};
+	  var codeFiles = {};
+	</script>
+    <table id="layout" cellspacing="0">
+	  <tr id="content">
+	    <td>
+		  <table cellspacing="0">
+		    <tr>
+			  <td id="navigation">
+				<table width="100%" height="100%">
+				  <tr style="height:10px;text-align:center;">
+				    <td id="logoWrapper">
+        			    <img src="img/logo.png" onclick="javascript:switchToIntro();" style="cursor:pointer;"/>
+		        	    <span id="title">Tutorials</span>
+					</td>
+				  </tr>
+				  <tr>
+				    <td style="vertical-align:top;">
+					  <div id="tutorialList">
+					    <div>
+					      {{TUTORIAL_LIST}}
+					    </div>
+					  </div>
+					</td>
+				  </tr>
+				</table>
+			  </td>
+			  <td style="vertical-align:top;">
+
+<div id="tabs">
+	<ul>
+	  <li><a href="#slide-tab">Slides</a></li>
+	  <li><a href="#source-tab">Source Code</a></li>
+	</ul>
+	<div id="slide-tab">
+      <iframe id="slide" src="https://docs.google.com/a/puder.org/present/view?id=0ARK_GT74ZdemZGcycnpkaDdfOGZxN3o0cGYy&hl=en_US" frameborder="0"></iframe>	</div>
+	<div id="source-tab">
+	  <div class="file-tabs">
+	  <ul id="fileTabList">
+		<li><a href="code1.html">Code 1</a></li>
+		<li><a href="#file2">File 2</a></li>
+	  </ul>
+      </div> <!-- file tabs -->
+    </div> <!-- source-tab  -->
+</div> <!-- tabs -->
+
+		  </td></tr>
+		  </table>
+	    </td>
+	  </tr>
+	</table>
+{{GENERATED_CODE}}
+<script type="text/javascript">
+  function onLayout() {
+    var windowHeight = $(window).height();
+	$('#slide').height(windowHeight - $('#slide').position().top);
+    $('#tutorialList').height(windowHeight-$('#tutorialList').position().top);
+    if (!isMobile) {
+      $('.listing').find('.syntaxhighlighter').each(function(i) {
+        $(this).height(windowHeight - $(this).offset().top);
+      });
+    }
+  }
+  
+  if (!isMobile) {
+    $(window).resize(function() {
+      onLayout();
+    });
+  }
+  $(document).ready(function() {
+    SyntaxHighlighter.highlight();
+    setTimeout(onLayout, 1000);
+    onLayout();
+  });
+  onLayout();
+  
+  $(function() {
+	  $('#tabs').tabs({
+		   show: function(event, ui) { onLayout(); $('.syntaxhighlighter').scrollTop(0); }
+	  });
+	  // The starting config contains a general XMLVM Intro, with no source.
+	  $('#tabs').tabs('disable', 1);
+	});
+  
+  function switchToIntro() {
+      $('.selectedEntry').removeClass('selectedEntry');
+      $('#slide').attr('src', 'https://docs.google.com/a/puder.org/present/view?id=0ARK_GT74ZdemZGcycnpkaDdfOGZxN3o0cGYy&hl=en_US');
+	  // The starting config contains a general XMLVM Intro, with no source.
+	  $('#tabs').tabs('select', 0);
+	  $('#tabs').tabs('disable', 1);
+	  $('#tutorialList').scrollTop(0);
+  }
+
+  function switchToTutorial(id) {
+	$('.selectedEntry').removeClass('selectedEntry');
+    $('#' + id).addClass('selectedEntry');
+	  
+    $('#slide').attr('src', slidesUrl[id]);
+	$('#tabs').tabs('enable', 1);
+    $('#tabs').tabs('select', 0);
+    
+    $('.file-tabs').tabs('remove');
+    
+    $('#fileTabList').empty();
+    
+    var fileList = codeFiles[id];
+    for (index in fileList) {
+      if (fileList[index].loc) {
+  	    $('#fileTabList').append($('<li><a href="' + fileList[index].loc + '">' + fileList[index].label + '</a></li>'));
+      }
+    }
+    
+    $('.file-tabs').tabs({
+		   show: function(event, ui) { onLayout(); },
+		   load: function(event, ui) { SyntaxHighlighter.highlight(); onLayout(); }
+	});
+    $('.file-tabs').tabs('select', 0);
+  }
+  
+  if (isMobile) {
+	  new iScroll('tutorialList');
+	  // Set a fixed width.
+	  $('#tutorialList').width($('#tutorialList').width());
+  }
+  if(!isMobile) {
+	  $('.tutorialEntry').each(function(i) {
+		  $(this).addClass('tutorialEntryHover');
+	  });
+  }
+</script>
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  var pageTracker = _gat._getTracker("UA-1247787-5");
+  pageTracker._initData();
+  pageTracker._trackPageview();
+</script>
+  </body>
+</html>

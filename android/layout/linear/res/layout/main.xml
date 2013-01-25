@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2002-2011 by XMLVM.org
+ *
+ * Project Info:  http://www.xmlvm.org
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or
+ * (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+ * License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
+ * USA.
+-->
+
+<!-- 
+Layout resource to be used when the device is in portrait orientation.
+It uses a LinearLayout on top-level of the view hierarchy with three nested
+LinerarLayouts to achieve the portrait orientation of the six buttons.
+The XML-attributes specify layout parameters for the respective widget.
+Note that the layout parameters must match the enclosing container. In
+this particular example the buttons are embedded in a LinearLayout,
+therefore all the layout parameters mentioned in the <Button> tag
+must match to the capabilities as defined by the LinearLayout. The
+layout parameters supported by a LinearLayout are defined here:
+http://developer.android.com/reference/android/widget/LinearLayout.LayoutParams.html
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_margin="20px"
+		android:layout_weight="0.33">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent"	android:layout_weight="0.5"
+			android:layout_marginRight="10px" android:text="1"/>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent"	android:layout_weight="0.5"
+			android:layout_marginLeft="10px" android:text="2"/>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_margin="20px"
+		android:layout_weight="0.33">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent"	android:layout_weight="0.5"
+			android:layout_marginRight="10px" android:text="3"/>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent"	android:layout_weight="0.5"
+			android:layout_marginLeft="10px" android:text="4"/>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_margin="20px"
+		android:layout_weight="0.33">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent"	android:layout_weight="0.5"
+			android:layout_marginRight="10px" android:text="5"/>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="fill_parent"	android:layout_weight="0.5"
+			android:layout_marginLeft="10px" android:text="6"/>
+	</LinearLayout>
+</LinearLayout>

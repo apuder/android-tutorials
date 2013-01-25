@@ -1,0 +1,22 @@
+<project name="xmlvm" default="compile" basedir=".">
+
+	<presetdef name="javac">
+		<javac includeantruntime="false" />
+	</presetdef>
+
+	<target name="compile">
+		<echo message="Compiling tutorial-web-generator" />
+		<mkdir dir="classes" />
+		<javac srcdir="src" destdir="classes">
+			<classpath>
+			    <pathelement location="lib/jdom.jar" />
+			</classpath>
+			<include name="**/*.java" />
+		</javac>
+	</target>
+
+	<target name="clean">
+        <delete dir="classes" failonerror="false"/>
+    </target>
+
+</project>

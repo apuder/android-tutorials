@@ -1,0 +1,38 @@
+<project name="tutorial" default="gen-html" basedir=".">
+	
+	<target name="gen-html">
+	    <ant dir="tools/tutorial-web-generator"/>
+		<ant dir="doc"/>
+	</target>
+
+	<target name="clean">
+	    <delete dir="dist" failonerror="false"/>
+	    <ant dir="tools/tutorial-web-generator" target="clean"/>
+		<ant dir="doc" target="clean"/>
+
+		<ant dir="android/activityswitch" target="clean"/>
+		<ant dir="android/drawing" target="clean"/>
+		<ant dir="android/helloworld/decl" target="clean"/>
+		<ant dir="android/helloworld/fullscreen" target="clean"/>
+		<ant dir="android/helloworld/i18n" target="clean"/>
+		<ant dir="android/helloworld/landscape" target="clean"/>
+		<ant dir="android/helloworld/portrait" target="clean"/>
+		<ant dir="android/helloworld/prog" target="clean"/>
+		<ant dir="android/layout/linear" target="clean"/>
+		<ant dir="android/layout/relative" target="clean"/>
+		<ant dir="android/map" target="clean"/>
+		<ant dir="android/navigation/list" target="clean"/>
+		<ant dir="android/navigation/menu" target="clean"/>
+		<ant dir="android/navigation/tabbar" target="clean"/>
+		<ant dir="android/sayhello/decl" target="clean"/>
+		<ant dir="android/sayhello/prog" target="clean"/>
+		<ant dir="android/widgets" target="clean"/>
+		<ant dir="android/sensor/accelerometer" target="clean"/>
+		<ant dir="android/sensor/camera" target="clean"/>
+		<ant dir="android/sensor/gyroscope" target="clean"/>
+		<ant dir="android/sensor/gps" target="clean"/>
+		<ant dir="android/sound" target="clean"/>
+		<ant dir="android/touch" target="clean"/>
+	</target>
+
+</project>
