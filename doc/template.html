@@ -174,7 +174,7 @@
 				  <tr style="height:10px;text-align:center;">
 				    <td id="logoWrapper">
         			    <img src="img/logo.png" onclick="javascript:switchToIntro();" style="cursor:pointer;"/>
-		        	    <span id="title">Tutorials</span>
+		        	    <a href="tutorial-sources.tar.gz"><img src="img/download.png"/></a>
 					</td>
 				  </tr>
 				  <tr>
@@ -196,7 +196,8 @@
 	  <li><a href="#source-tab">Source Code</a></li>
 	</ul>
 	<div id="slide-tab">
-      <iframe id="slide" src="https://docs.google.com/a/puder.org/present/embed?id=0ARK_GT74ZdemZGcycnpkaDdfOGZxN3o0cGYy&hl=en_US" frameborder="0"></iframe>	</div>
+      <iframe id="slide" src="https://docs.google.com/presentation/d/1t3buFRfwXhQyED21GzQd-0skPP4n30l_QumzPVgQ8N4/preview" frameborder="0"></iframe>
+    </div>
 	<div id="source-tab">
 	  <div class="file-tabs">
 	  <ul id="fileTabList">
@@ -247,7 +248,7 @@
   
   function switchToIntro() {
       $('.selectedEntry').removeClass('selectedEntry');
-      $('#slide').attr('src', 'https://docs.google.com/a/puder.org/present/embed?id=0ARK_GT74ZdemZGcycnpkaDdfOGZxN3o0cGYy&hl=en_US');
+      $('#slide').attr('src', 'https://docs.google.com/presentation/d/1t3buFRfwXhQyED21GzQd-0skPP4n30l_QumzPVgQ8N4/preview');
 	  // The starting config contains a general XMLVM Intro, with no source.
 	  $('#tabs').tabs('select', 0);
 	  $('#tabs').tabs('disable', 1);

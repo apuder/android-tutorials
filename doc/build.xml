@@ -41,6 +41,12 @@
 				<include name="**/*" />
 			</fileset>
 		</copy>
+		<tar destfile="../${html-output}/tutorial-sources.tar.gz"
+		     compression="gzip">
+		    <tarfileset dir="../android" prefix="tutorial/android">
+		        <include name="**"/>
+		    </tarfileset>
+		</tar>
 		<echo message="Tutorial HTML stored in: ${html-output}" />
 	</target>
 	
