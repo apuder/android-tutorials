@@ -260,6 +260,15 @@
       <xmlvm-status>Not working</xmlvm-status>
     </application>
 	
+	<application name="NFC Reader" slides="https://docs.google.com/presentation/d/10C56ZZLp3ggg_pZcZmn54AGf-2etbTTqpLnHBByM0qU/embed">
+      <files base="android/sensor/nfcreader">
+        <file name="src/org/xmlvm/tutorial/android/sensor/nfcreader/NfcTagReader.java"></file>
+        <file name="AndroidManifest.xml"></file>
+      </files>
+      <text>Read NDEF-formatted NFC tags</text>
+      <xmlvm-status>Not working</xmlvm-status>
+    </application>
+	
     <application name="Sound" slides="https://docs.google.com/present/embed?id=dcr4jvtg_412gjq5dgfg">
       <files base="android/sound">
         <file name="src/org/xmlvm/tutorial/android/sound/SoundActivity.java"></file>
