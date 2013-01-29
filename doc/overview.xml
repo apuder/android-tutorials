@@ -181,18 +181,33 @@
 	<xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
 	</application>
 
-	<application name="ActivitySwitch" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfMjIwaGt0anBwZ2Y&amp;amp;hl=en_US">
-      <files base="android/activityswitch">
-        <file name="src/org/xmlvm/tutorial/android/activity/BlueActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/YellowActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/LoggingActivity.java"/>
+	<application name="Activities (explicit)" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfMjIwaGt0anBwZ2Y&amp;amp;hl=en_US">
+      <files base="android/activity/explicit/activityswitchexp">
+        <file name="src/org/xmlvm/tutorial/android/activity/explicit/BlueActivity.java"/>
+        <file name="src/org/xmlvm/tutorial/android/activity/explicit/YellowActivity.java"/>
+        <file name="src/org/xmlvm/tutorial/android/activity/explicit/LoggingActivity.java"/>
       </files>
-	<text>A simple Android application demonstrating switching between activities
+	<text>A simple Android application demonstrating the explicit switching between activities
 	with the called activity providing a result to the calling activity. Additionally
 	the application facilitates a BackKey handler.
 	</text>
 	<xmlvm-status>Partially working. C Backend only and rotation does not work.
 	</xmlvm-status>
+	</application>
+
+	<application name="Activities (implicit)" slides="https://docs.google.com/presentation/d/1ZUqFMR3NdLwNJd9Y1N1ZEzxy7ioc4Z3nbt9eAynLYbU/embed">
+      <files base="android/activity/implicit">
+        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/BlueActivity.java"/>
+        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/RedActivity.java"/>
+        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/YellowActivity.java"/>
+        <file name="activityswitchimplicit/AndroidManifest.xml"/>
+        <file name="activityswitchimplicitgreen/src/org/xmlvm/tutorial/android/activity/implicit/green/GreenActivity.java"/>
+        <file name="activityswitchimplicitgreen/AndroidManifest.xml"/>
+      </files>
+	<text>Two Android applications demonstrating the implicit launching of activities. There are three activities
+	that respond to the same action (Yellow, Red, and Green) prompting Android to show an activity chooser.
+	</text>
+	<xmlvm-status>Not working.</xmlvm-status>
 	</application>
 
 	<application name="Menu" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfMjIxZjhud2poZGs&amp;amp;hl=en_US">
