@@ -217,6 +217,17 @@
 	<xmlvm-status>Not working</xmlvm-status>
 	</application>
 
+	<application name="Settings" slides="https://docs.google.com/presentation/d/1_eQdjoKiSayhw3MxXXY_jUmFNAw2pfkDdafFq4TRsH4/embed">
+      <files base="android/settings">
+        <file name="src/org/xmlvm/tutorial/android/settings/MainActivity.java"/>
+        <file name="src/org/xmlvm/tutorial/android/settings/SettingsActivity.java"/>
+        <file name="res/values/gender.xml"/>
+        <file name="res/xml/settings.xml"/>
+      </files>
+	<text>Using settings under Android.</text>
+	<xmlvm-status>Not working</xmlvm-status>
+	</application>
+
 	<application name="Map" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfNDIyZGJrMjRkZGg&amp;hl=en_US&amp;pli=1">
       <files base="android/map">
         <file name="src/org/xmlvm/tutorial/android/map/MapActivity.java"/>

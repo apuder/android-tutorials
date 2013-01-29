@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+    	<EditTextPreference android:key="full_name"
+    	    android:title="Fullname"
+    	    android:summary="Enter your full name" />
+    	<ListPreference android:key="gender"
+    	    android:title="Gender"
+    	    android:summary="Select your gender"
+			android:defaultValue="n.a." android:entries="@array/gender_titles"
+			android:entryValues="@array/gender_values" />
+    </PreferenceCategory>
+    
+	<PreferenceCategory android:title="Development">
+		<CheckBoxPreference android:key="like_android"
+			android:title="I Like Android"
+			android:summary="Tick this checkbox to indicate that you love developing for Android devices." />
+	</PreferenceCategory>
+	
+</PreferenceScreen>
