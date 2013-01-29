@@ -154,6 +154,14 @@
 	<xmlvm-status>Not working</xmlvm-status>
 	</application>
 	
+	<application name="Alerts" slides="https://docs.google.com/presentation/d/1se994fAg9KXLUwaNoD2kNH5lIeiTdkN1FNx-Mjb5yeE/embed">
+      <files base="android/alerts">
+        <file name="src/org/xmlvm/tutorial/android/alert/AlertActivity.java"/>
+      </files>
+	<text>Shows the use of toasts and alert dialogs</text>
+	<xmlvm-status>Not working</xmlvm-status>
+	</application>
+	
 	<application name="MultiTouch" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfMjI1ZnB4ODZ2YzY&amp;hl=en_US">
       <files base="android/touch">
         <file name="src/org/xmlvm/tutorial/android/touch/MultiTouchActivity.java"/>
