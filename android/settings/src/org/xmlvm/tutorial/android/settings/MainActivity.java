@@ -46,6 +46,6 @@ public class MainActivity extends Activity {
 
         boolean b = pref.getBoolean("like_android", false);
         lblLikeAndroid.setText(b ? "Sure - nothing more than that!"
-                : "Maybe after attending this workshop ...");
+                : "Maybe after attending this class...");
     }
 }
