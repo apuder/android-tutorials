@@ -30,10 +30,10 @@ import android.widget.TextView;
  * consists of several Activities that can call each other. It is even possible
  * to call activities from other applications (e.g., to pick a contact from the
  * address book). Calling an activity pushes this activity onto a stack to
- * become the active activity. Leaving the active activity (e.g., by pressing the
- * Back button on the Android device) pops that activity off the stack to return
- * to the previous activity. Each activity has its own lifecycle and Android
- * will call callbacks at the appropriate moments. So far only the
+ * become the active activity. Leaving the active activity (e.g., by pressing
+ * the Back button on the Android device) pops that activity off the stack to
+ * return to the previous activity. Each activity has its own lifecycle and
+ * Android will call callbacks at the appropriate moments. So far only the
  * <code>onCreate()</code) callback has been used that is called by Android
  * whenever the Activity is created. The activity lifecycle is described here:
  * http://developer.android.com/reference/android/app/Activity.html
@@ -47,7 +47,9 @@ import android.widget.TextView;
  * used. Its only purpose is to override all activity lifecycle methods to print
  * out appropriate messages. When running this application in the emulator,
  * check the logging output to understand when which activity lifecycle methods
- * are invoked by Android.
+ * are invoked by Android. YellowActivity is invoked from BlueActivity via an
+ * explicit intent, meaning, the intent used to launch YellowActivity is making
+ * direct/explicit reference to YellowActivity's class object.
  */
 public class BlueActivity extends LoggingActivity {
 
@@ -89,7 +91,8 @@ public class BlueActivity extends LoggingActivity {
     public void onClick(View v) {
         resultField.setText("");
         /*
-         * Construct an Intent to launch YellowActivity.
+         * Construct an Intent to launch YellowActivity. Note that
+         * YellowActivity is referenced explicitly via its class object.
          */
         Intent intent = new Intent(this, YellowActivity.class);
         /*

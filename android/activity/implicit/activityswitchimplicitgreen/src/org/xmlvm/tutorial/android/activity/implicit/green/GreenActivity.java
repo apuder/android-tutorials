@@ -5,6 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * GreenActivity is the only activity of a separate Android application called
+ * ActivitySwitchImplicitGreen. Note that there is no dependence to any of the
+ * classes of AndroidSwitchImplicit. The only thing that links GreenActivity
+ * with the other activities (YellowActivity, RedActivity) is the same intent
+ * filter. This application can be installed separately.
+ */
 public class GreenActivity extends Activity {
 
     private static int calls = 0;
