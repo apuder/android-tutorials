@@ -244,7 +244,6 @@
       <files base="android/settings">
         <file name="src/org/xmlvm/tutorial/android/settings/MainActivity.java"/>
         <file name="src/org/xmlvm/tutorial/android/settings/SettingsActivity.java"/>
-        <file name="res/values/gender.xml"/>
         <file name="res/xml/settings.xml"/>
       </files>
 	<text>Using settings under Android.</text>
