@@ -274,7 +274,7 @@
       <files base="android/sensor/gyroscope">
         <file name="src/org/xmlvm/tutorial/android/sensor/gyroscope/GyroActivity.java"></file>
       </files>
-      <text>Simple Android aplication to demonstrate use of Gyroscope sensor in android.</text>
+      <text>Simple Android aplication to demonstrate use of Gyroscope sensor in Android.</text>
       <xmlvm-status>Not working</xmlvm-status>
     </application>
 
@@ -290,7 +290,7 @@
       <files base="android/sensor/camera">
         <file name="src/org/xmlvm/tutorial/android/sensor/camera/CameraActivity.java"></file>
       </files>
-      <text>Simple Android aplication to demonstrate use of Camera in android</text>
+      <text>Simple Android aplication to demonstrate use of camera in Android.</text>
       <xmlvm-status>Not working</xmlvm-status>
     </application>
 	
@@ -299,7 +299,7 @@
         <file name="src/org/xmlvm/tutorial/android/sensor/nfcreader/NfcTagReader.java"></file>
         <file name="AndroidManifest.xml"></file>
       </files>
-      <text>Read NDEF-formatted NFC tags</text>
+      <text>Read NDEF-formatted NFC tags.</text>
       <xmlvm-status>Not working</xmlvm-status>
     </application>
 	
