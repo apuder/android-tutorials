@@ -210,6 +210,15 @@
 	<xmlvm-status>Not working.</xmlvm-status>
 	</application>
 
+	<application name="Handler" slides="https://docs.google.com/presentation/d/1UIJe3D8yS5L_CzK6dqwSjp0OZSoUJBKamLP3oGaaPF4/embed">
+      <files base="android/handler">
+        <file name="src/org/xmlvm/tutorial/android/handler/FibonacciActivity.java"/>
+      </files>
+	<text>Shows the use of a Handler to post messages to the UI thread.
+	</text>
+	<xmlvm-status>Not working.</xmlvm-status>
+	</application>
+
 	<application name="Menu" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfMjIxZjhud2poZGs&amp;amp;hl=en_US">
       <files base="android/navigation/menu">
         <file name="src/org/xmlvm/tutorial/android/menu/MenuActivity.java"/>
