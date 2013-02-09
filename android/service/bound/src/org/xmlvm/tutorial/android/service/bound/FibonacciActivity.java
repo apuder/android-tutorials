@@ -2,6 +2,7 @@ package org.xmlvm.tutorial.android.service.bound;
 
 import android.app.Activity;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ public class FibonacciActivity extends Activity implements FibonacciResultListen
     private FibonacciService fibonacciService;
     private boolean          bound;
     private boolean          computationPending = false;
+    private int              n                  = -1;
 
     final private class MyServiceConnection implements ServiceConnection {
 
@@ -28,7 +30,7 @@ public class FibonacciActivity extends Activity implements FibonacciResultListen
             fibonacciService.registerResultListener(FibonacciActivity.this);
             if (computationPending) {
                 computationPending = false;
-                fibonacciService.startComputation();
+                fibonacciService.startComputation(n);
             }
         }
 
@@ -49,33 +51,14 @@ public class FibonacciActivity extends Activity implements FibonacciResultListen
         edtInput = (EditText) findViewById(R.id.edt_fib);
         lblResult = (TextView) findViewById(R.id.lbl_result);
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            int n = extras.getInt("n", -1);
-            int res = extras.getInt("res", -1);
-
-            if (n != -1 && res != -1) {
-                lblResult.setText("fib(" + n + "): " + res);
-            }
-        }
+        bindToFibonacciService();
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
-        if (!bound) {
-            Intent intent = new Intent(this, FibonacciService.class);
-            bindService(intent, connection, 0);
-        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onDestroy() {
+        super.onDestroy();
 
         if (bound) {
-            fibonacciService.unregisterResultLister();
             unbindService(connection);
             bound = false;
         }
@@ -93,20 +76,23 @@ public class FibonacciActivity extends Activity implements FibonacciResultListen
 
     public void compute(View v) {
         try {
-            int n = Integer.parseInt(edtInput.getText().toString());
-            Intent intent = new Intent(this, FibonacciService.class);
-            intent.putExtra("n", n);
+            n = Integer.parseInt(edtInput.getText().toString());
 
-            if (!bound) {
-                startService(intent);
-                computationPending = true;
-                bindService(intent, connection, 0);
+            if (bound) {
+                fibonacciService.startComputation(n);
             } else {
-                intent.putExtra("start", true);
-                startService(intent);
+                computationPending = true;
+                bindToFibonacciService();
             }
         } catch (Exception exc) {
             lblResult.setText("Invalid input ...");
+        }
+    }
+
+    private void bindToFibonacciService() {
+        if (!bound) {
+            Intent intent = new Intent(this, FibonacciService.class);
+            bindService(intent, connection, Context.BIND_AUTO_CREATE);
         }
     }
 }
