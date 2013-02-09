@@ -17,6 +17,10 @@ public class FibonacciService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         int n = intent.getExtras().getInt("n");
         int res = fib(n);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+        }
         showNotification(n, res);
     }
 
