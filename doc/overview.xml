@@ -219,6 +219,17 @@
 	<xmlvm-status>Not working.</xmlvm-status>
 	</application>
 
+	<application name="Service (started)" slides="https://docs.google.com/presentation/d/1obdCufTxms2xvVVy0c6w5QRiglt0Mifgc-gcxRTpVBA/embed">
+      <files base="android/service/started">
+        <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciActivity.java"/>
+        <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciService.java"/>
+        <file name="AndroidManifest.xml"/>
+      </files>
+	<text>Demonstrates the use of a started service.
+	</text>
+	<xmlvm-status>Not working.</xmlvm-status>
+	</application>
+
 	<application name="Service (bound)" slides="https://docs.google.com/presentation/d/1toqszC3BmQq8nZ1ZCmkqxB8whsr2wHcezYsT32GuIyw/embed">
       <files base="android/service/bound">
         <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciActivity.java"/>

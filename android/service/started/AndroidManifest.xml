@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
         
+        <!--
+        In order to declare a service, its class must be derived from base class Service
+        and it must be declared in AndroidManifest.xml
+        -->
         <service android:name=".FibonacciService" />
     </application>
 
