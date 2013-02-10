@@ -219,6 +219,18 @@
 	<xmlvm-status>Not working.</xmlvm-status>
 	</application>
 
+	<application name="Service (bound)" slides="https://docs.google.com/presentation/d/1toqszC3BmQq8nZ1ZCmkqxB8whsr2wHcezYsT32GuIyw/embed">
+      <files base="android/service/bound">
+        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciActivity.java"/>
+        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciResultListener.java"/>
+        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciService.java"/>
+        <file name="AndroidManifest.xml"/>
+      </files>
+	<text>Demonstrates the use of a bound service.
+	</text>
+	<xmlvm-status>Not working.</xmlvm-status>
+	</application>
+
 	<application name="Menu" slides="https://docs.google.com/present/embed?id=0ASN-X0BmUtZEZGNyNGp2dGdfMjIxZjhud2poZGs&amp;amp;hl=en_US">
       <files base="android/navigation/menu">
         <file name="src/org/xmlvm/tutorial/android/menu/MenuActivity.java"/>
