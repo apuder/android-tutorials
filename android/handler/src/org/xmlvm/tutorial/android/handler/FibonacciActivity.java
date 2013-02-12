@@ -18,10 +18,10 @@ import android.widget.TextView;
 public class FibonacciActivity extends Activity {
 
     /**
-     * Class MyHandler overrides method handleMessage() that will be called by
-     * the Looper whenever a message needs to be dispatched to MyHandler.
+     * Class UIHandler overrides method handleMessage() that will be called by
+     * the Looper whenever a message needs to be dispatched to UIHandler.
      */
-    private final class MyHandler extends Handler {
+    private final class UIHandler extends Handler {
 
         public void handleMessage(Message msg) {
             /*
@@ -39,14 +39,14 @@ public class FibonacciActivity extends Activity {
     private TextView      lblResult;
 
     /*
-     * This is where MyHandler is created. Note that this happens as part of the
+     * This is where UIHandler is created. Note that this happens as part of the
      * instantiation of FibonacciActivity just prior to calling of onCreate().
      * Since the instantiation of FibonacciActivity happens in the context of
-     * the UI thread, this MyHandler instance will be associated with the Looper
+     * the UI thread, this UIHandler instance will be associated with the Looper
      * of the UI thread. Also note that the Looper for the UI thread is
      * automatically created by Android.
      */
-    final private Handler handler = new MyHandler();
+    final private Handler handler = new UIHandler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,7 @@ public class FibonacciActivity extends Activity {
     public void compute(View v) {
         try {
             /*
-             * Read the integer value the unser provided
+             * Read the integer value the user provided.
              */
             final int n = Integer.parseInt(edtInput.getText().toString());
             /*
@@ -73,10 +73,19 @@ public class FibonacciActivity extends Activity {
                 public void run() {
                     /*
                      * Perform the long running operation. Since we are running
-                     * in another thread (not the UI thread) it would be illegal
-                     * to update the UI right here.
+                     * in another thread (not the UI thread) it would be
+                     * incorrect to update the UI (i.e., lblResult) right here.
                      */
                     int res = fib(n);
+                    /*
+                     * Sleep for 5 seconds to fake a long running operation.
+                     * Since this is done in a background thread, it is not a
+                     * problem.
+                     */
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                    }
                     /*
                      * Use the handler to create a message.
                      */
@@ -93,7 +102,7 @@ public class FibonacciActivity extends Activity {
                      * with the looper associated with the handler (i.e., in
                      * this case the looper of the UI thread). The looper will
                      * eventually dispatch the message by calling
-                     * MyHandler.handleMessage(). Note that sendMessage() is not
+                     * UIHandler.handleMessage(). Note that sendMessage() is not
                      * a blocking operation.
                      */
                     handler.sendMessage(msg);
