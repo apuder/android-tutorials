@@ -195,7 +195,7 @@
 	</xmlvm-status>
 	</application>
 
-	<application name="Activities (implicit)" slides="https://docs.google.com/presentation/d/1ZUqFMR3NdLwNJd9Y1N1ZEzxy7ioc4Z3nbt9eAynLYbU/embed">
+  <application name="Activities (implicit)" slides="https://docs.google.com/presentation/d/1ZUqFMR3NdLwNJd9Y1N1ZEzxy7ioc4Z3nbt9eAynLYbU/embed">
       <files base="android/activity/implicit">
         <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/BlueActivity.java"/>
         <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/RedActivity.java"/>
@@ -204,11 +204,28 @@
         <file name="activityswitchimplicitgreen/src/org/xmlvm/tutorial/android/activity/implicit/green/GreenActivity.java"/>
         <file name="activityswitchimplicitgreen/AndroidManifest.xml"/>
       </files>
-	<text>Two Android applications demonstrating the implicit launching of activities. There are three activities
-	that respond to the same action (Yellow, Red, and Green) prompting Android to show an activity chooser.
-	</text>
-	<xmlvm-status>Not working.</xmlvm-status>
-	</application>
+      <text>Two Android applications demonstrating the implicit launching of activities. There are three activities
+      that respond to the same action (Yellow, Red, and Green) prompting Android to show an activity chooser.
+      </text>
+      <xmlvm-status>Not working.</xmlvm-status>
+  </application>
+
+  <application name="Fragments" slides="https://docs.google.com/presentation/d/16VL31q_5jtaUX99fmLS9sX4G-Im1-_EtLX2HN8jyx5I/embed">
+      <files base="android/activity/fragment">
+        <file name="src/org/xmlvm/tutorial/android/activity/fragment/MainActivity.java"/>
+        <file name="res/layout/activity_main.xml"/>
+        <file name="res/layout-land/activity_main.xml"/>
+        <file name="src/org/xmlvm/tutorial/android/activity/fragment/FruitListFragment.java"/>
+        <file name="src/org/xmlvm/tutorial/android/activity/fragment/DetailFragment.java"/>
+        <file name="src/org/xmlvm/tutorial/android/activity/fragment/DetailActivity.java"/>
+        <file name="res/layout/activity_detail.xml"/>
+        <file name="res/layout/fragment_detail.xml"/>
+      </files>
+  <text>Two fragments that are shown side-by-side in landscape mode and in
+    two separate activities in portrait mode.
+  </text>
+  <xmlvm-status>Not working.</xmlvm-status>
+  </application>
 
 	<application name="Handler" slides="https://docs.google.com/presentation/d/1UIJe3D8yS5L_CzK6dqwSjp0OZSoUJBKamLP3oGaaPF4/embed">
       <files base="android/handler">
