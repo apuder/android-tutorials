@@ -236,6 +236,16 @@
 	<xmlvm-status>Not working.</xmlvm-status>
 	</application>
 
+  <application name="AsyncTask" slides="https://docs.google.com/presentation/d/1v5frKWOzqfIEE5y47X2r5-6kv9FA0S2PHNvzPW6VKr0/embed">
+      <files base="android/asynctask">
+        <file name="src/org/xmlvm/tutorial/android/asynctask/MainActivity.java"/>
+        <file name="res/layout/activity_main.xml"/>
+      </files>
+  <text>Shows usage of AsyncTask to simplify background processing.
+  </text>
+  <xmlvm-status>Not working.</xmlvm-status>
+  </application>
+
 	<application name="Service (started)" slides="https://docs.google.com/presentation/d/1obdCufTxms2xvVVy0c6w5QRiglt0Mifgc-gcxRTpVBA/embed">
       <files base="android/service/started">
         <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciActivity.java"/>
