@@ -200,7 +200,7 @@
     </div>
 	<div id="source-tab">
 	  <div class="file-tabs">
-	  <ul id="fileTabList">
+	  <ul id="fileTabs">
 		<li><a href="code1.html">Code 1</a></li>
 		<li><a href="#file2">File 2</a></li>
 	  </ul>
@@ -225,7 +225,7 @@
       });
     }
   }
-  
+
   if (!isMobile) {
     $(window).resize(function() {
       onLayout();
@@ -237,7 +237,7 @@
     onLayout();
   });
   onLayout();
-  
+
   $(function() {
 	  $('#tabs').tabs({
 		   show: function(event, ui) { onLayout(); $('.syntaxhighlighter').scrollTop(0); }
@@ -245,12 +245,11 @@
 	  // The starting config contains a general XMLVM Intro, with no source.
 	  $('#tabs').tabs('disable', 1);
 	});
-  
+
   function switchToIntro() {
       $('.selectedEntry').removeClass('selectedEntry');
       $('#slide').attr('src', 'https://docs.google.com/presentation/d/1t3buFRfwXhQyED21GzQd-0skPP4n30l_QumzPVgQ8N4/preview');
 	  // The starting config contains a general XMLVM Intro, with no source.
-	  $('#tabs').tabs('select', 0);
 	  $('#tabs').tabs('disable', 1);
 	  $('#tutorialList').scrollTop(0);
   }
@@ -258,29 +257,28 @@
   function switchToTutorial(id) {
 	$('.selectedEntry').removeClass('selectedEntry');
     $('#' + id).addClass('selectedEntry');
-	  
+
     $('#slide').attr('src', slidesUrl[id]);
 	$('#tabs').tabs('enable', 1);
-    $('#tabs').tabs('select', 0);
-    
-    $('.file-tabs').tabs('remove');
-    
-    $('#fileTabList').empty();
-    
+	$('#tabs').tabs('option', 'active', 0);
+
+    $('#fileTabs').empty();
+
     var fileList = codeFiles[id];
     for (index in fileList) {
       if (fileList[index].loc) {
-  	    $('#fileTabList').append($('<li><a href="' + fileList[index].loc + '">' + fileList[index].label + '</a></li>'));
+  	    $('#fileTabs').append($('<li><a href="' + fileList[index].loc + '">' + fileList[index].label + '</a></li>'));
       }
     }
-    
+
     $('.file-tabs').tabs({
 		   show: function(event, ui) { onLayout(); },
 		   load: function(event, ui) { SyntaxHighlighter.highlight(); onLayout(); }
 	});
-    $('.file-tabs').tabs('select', 0);
+	    $('.file-tabs').tabs('refresh');
+    $('.file-tabs').tabs('option', 'active', 0);
   }
-  
+
   if (isMobile) {
 	  new iScroll('tutorialList');
 	  // Set a fixed width.
