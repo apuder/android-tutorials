@@ -55,7 +55,6 @@
 	  #code iframe{
 		width:100%;
 	    height:100%;
-		background:white;
 	  }
 	  
 	  #title {
@@ -196,7 +195,7 @@
 	  <li><a href="#source-tab">Source Code</a></li>
 	</ul>
 	<div id="slide-tab">
-      <iframe id="slide" src="https://docs.google.com/presentation/d/1t3buFRfwXhQyED21GzQd-0skPP4n30l_QumzPVgQ8N4/preview" frameborder="0"></iframe>
+      <iframe id="slide" src="/ViewerJS#/doc/slides.pdf" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
     </div>
 	<div id="source-tab">
 	  <div class="file-tabs">
@@ -248,7 +247,7 @@
 
   function switchToIntro() {
       $('.selectedEntry').removeClass('selectedEntry');
-      $('#slide').attr('src', 'https://docs.google.com/presentation/d/1t3buFRfwXhQyED21GzQd-0skPP4n30l_QumzPVgQ8N4/preview');
+      $('#slide').attr('src', '/ViewerJS#/doc/slides.pdf');
 	  // The starting config contains a general XMLVM Intro, with no source.
 	  $('#tabs').tabs('disable', 1);
 	  $('#tutorialList').scrollTop(0);
@@ -258,7 +257,7 @@
 	$('.selectedEntry').removeClass('selectedEntry');
     $('#' + id).addClass('selectedEntry');
 
-    $('#slide').attr('src', slidesUrl[id]);
+    $('#slide').attr('src', '/ViewerJS#/slides/' + id + '-slides.pdf');
 	$('#tabs').tabs('enable', 1);
 	$('#tabs').tabs('option', 'active', 0);
 
