@@ -93,7 +93,7 @@ select {
     font-family: sans-serif; 
 }
 #documentName {
-    font-size: 14px;
+    font-size: 0px;
 }
 
 #toolbarContainer {
