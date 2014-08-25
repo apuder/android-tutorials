@@ -22,6 +22,9 @@ package org.xmlvm.util;
 
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -29,6 +32,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
@@ -116,10 +120,12 @@ public class TutorialWebGenerator {
 
         tutorialEntries.append("<div class=\"android\">");
         tutorialEntries.append("<div class=\"platformTitle\">Android</div>");
+
         int i = 0;
         for (Element androidApplication : androidApplications) {
             tutorialEntries.append(generateTutorialEntry(++i, "android", androidApplication));
             generatedCode.append(generateCodeFiles("android", androidApplication, outputPath));
+            copySlides("android", androidApplication, outputPath);
         }
         tutorialEntries.append("</div>");
 
@@ -212,6 +218,44 @@ public class TutorialWebGenerator {
         fileContent.append(sourceCode);
         fileContent.append("\n]]></script></div>");
         return fileContent.toString();
+    }
+
+    /**
+     * Copy the PDF slides.
+     */
+    private static void copySlides(String platform, Element application, String outputPath) {
+        outputPath = outputPath + "/slides";
+        File output = new File(outputPath);
+        System.out.println("Output Path: " + output.getAbsolutePath());
+        if (!output.exists()) {
+            if (!output.mkdirs()) {
+                System.err.println("Could not create output directory");
+                return;
+            }
+        }
+
+        String title = application.getAttributeValue("name");
+        String id = md5(platform + title);
+        Element filesElement = application.getChild("files");
+        File basePath = new File(filesElement.getAttributeValue("base"));
+
+        String name = "doc/slides.pdf";
+        File file = new File(basePath + "/" + name);
+        if (file.exists() && file.isFile()) {
+            String fileName = id + "-slides.pdf";
+            String pathName = output.getAbsolutePath() + "/" + fileName;
+            System.out.println("FileName: " + pathName);
+            try {
+                IOUtils.copy(new FileInputStream(file), new FileOutputStream(new File(pathName)));
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.err.println("File does not exist or is not a file: "
+                    + file.getAbsolutePath());
+        }
     }
 
     private static Document readOverviewXml(String path) {

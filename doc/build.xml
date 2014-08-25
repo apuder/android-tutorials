@@ -23,6 +23,7 @@
 	<property name="html-output" value="dist/www" />
 	<path id="classpath">
 		<pathelement location="../tools/tutorial-web-generator/lib/jdom.jar" />
+		<pathelement location="../tools/tutorial-web-generator/lib/commons-io-2.4.jar" />
 		<pathelement location="../tools/tutorial-web-generator/classes" />
 	</path>
 

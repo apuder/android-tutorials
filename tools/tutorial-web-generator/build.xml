@@ -10,6 +10,7 @@
 		<javac srcdir="src" destdir="classes">
 			<classpath>
 			    <pathelement location="lib/jdom.jar" />
+			    <pathelement location="lib/commons-io-2.4.jar" />
 			</classpath>
 			<include name="**/*.java" />
 		</javac>
