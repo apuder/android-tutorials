@@ -137,11 +137,9 @@ public class TutorialWebGenerator {
     private static String generateTutorialEntry(int index, String platform, Element application) {
         String title = application.getAttributeValue("name");
         String id = md5(platform + title);
-        String slidesUrl = application.getAttributeValue("slides");
         String description = application.getChildText("text");
 
         StringBuilder html = new StringBuilder();
-        html.append("<script>slidesUrl['" + id + "'] = '" + slidesUrl + "';</script>");
         html.append("<div id=\"" + id
                 + "\" class=\"tutorialEntry\" onclick=\"javascript:switchToTutorial('" + id
                 + "');\">");
