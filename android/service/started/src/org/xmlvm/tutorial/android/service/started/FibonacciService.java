@@ -6,6 +6,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.TaskStackBuilder;
 
 /**
  * FibonacciService is an example of a started service. The service will
@@ -68,39 +70,46 @@ public class FibonacciService extends IntentService {
      */
     private void showNotification(int n, int res) {
         /*
-         * Create a new notification with the help of the notification manager.
-         * Set a title, icon and sound for the notification and make it
-         * cancellable (i.e., the user can dismiss it from the status bar).
+         * Create a new notification with the help of the compatibility library.
+         * Note that this requires the inclusion of android-support-v4.jar. Set
+         * a title, icon and sound for the notification and make it cancellable
+         * (i.e., the user can dismiss it from the status bar).
          */
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        Notification notification = new Notification(R.drawable.ic_statuc_calc,
-                "Fibonacci result available", System.currentTimeMillis());
-        notification.flags |= Notification.FLAG_AUTO_CANCEL;
-        notification.defaults |= Notification.DEFAULT_SOUND;
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.ic_status_calc).setAutoCancel(true)
+                .setDefaults(Notification.DEFAULT_SOUND).setContentTitle("Fibonacci")
+                .setContentText("New result available");
 
         /*
          * Create a notificationIntent that will be used to re-launch
          * FibonacciActivity. Note that the intent contains the result of the
          * computation.
          */
-        Context context = getApplicationContext();
-        CharSequence contentTitle = "Fibonacci";
-        CharSequence contentText = "New result available";
-        Intent notificationIntent = new Intent(this, FibonacciActivity.class);
-        notificationIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        notificationIntent.putExtra("n", n);
-        notificationIntent.putExtra("res", res);
-        /*
-         * The notificationIntent is wrapped by a contentIntent. The latter is
-         * used to create the notification that will be displayed in the status
-         * bar. When the user clicks on the notification, Android will send
-         * notificationIntent that in turn will re-launch the application.
-         */
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
-                PendingIntent.FLAG_CANCEL_CURRENT);
-        notification.setLatestEventInfo(context, contentTitle, contentText, contentIntent);
+        Intent resultIntent = new Intent(this, FibonacciActivity.class);
+        resultIntent.putExtra("n", n);
+        resultIntent.putExtra("res", res);
 
-        notificationManager.notify(1, notification);
+        /*
+         * The stack builder object will contain an artificial back stack for
+         * the started Activity. This ensures that navigating backward from the
+         * FibonacciActivity leads out of the application to the Home screen.
+         */
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+
+        /*
+         * Adds the back stack for the Intent (but not the Intent itself)
+         */
+        stackBuilder.addParentStack(FibonacciActivity.class);
+
+        /*
+         * Adds the Intent that starts the Activity to the top of the stack
+         */
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        mBuilder.setContentIntent(resultPendingIntent);
+        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(1, mBuilder.build());
     }
 
     /**
