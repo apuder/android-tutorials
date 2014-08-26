@@ -192,7 +192,7 @@
 	  <li><a href="#source-tab">Source Code</a></li>
 	</ul>
 	<div id="slide-tab">
-      <iframe id="slide" src="ViewerJS#../doc/slides.pdf" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
+      <iframe id="slide" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
     </div>
 	<div id="source-tab">
 	  <div class="file-tabs">
@@ -285,6 +285,7 @@
 		  $(this).addClass('tutorialEntryHover');
 	  });
   }
+  setTimeout(switchToIntro, 1500);
 </script>
   </body>
 </html>
