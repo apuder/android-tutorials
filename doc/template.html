@@ -285,7 +285,9 @@
 		  $(this).addClass('tutorialEntryHover');
 	  });
   }
-  setTimeout(switchToIntro, 1500);
+  $("#tabs").tabs({
+    create: function( event, ui ) { switchToIntro(); }
+  });
 </script>
   </body>
 </html>
