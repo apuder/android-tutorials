@@ -236,12 +236,21 @@
 	<xmlvm-status>Not working.</xmlvm-status>
 	</application>
 
-  <application name="AsyncTask" slides="https://docs.google.com/presentation/d/1v5frKWOzqfIEE5y47X2r5-6kv9FA0S2PHNvzPW6VKr0/embed">
+  <application name="AsyncTask">
       <files base="android/asynctask">
         <file name="src/org/xmlvm/tutorial/android/asynctask/MainActivity.java"/>
         <file name="res/layout/activity_main.xml"/>
       </files>
   <text>Shows usage of AsyncTask to simplify background processing.
+  </text>
+  <xmlvm-status>Not working.</xmlvm-status>
+  </application>
+
+  <application name="Notification">
+      <files base="android/notification">
+        <file name="src/org/xmlvm/tutorial/android/notification/MainActivity.java"/>
+      </files>
+  <text>Shows usage of normal view notification.
   </text>
   <xmlvm-status>Not working.</xmlvm-status>
   </application>
