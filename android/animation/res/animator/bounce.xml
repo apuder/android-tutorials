@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2002-2014 by XMLVM.org
+ *
+ * Project Info:  http://www.xmlvm.org
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or
+ * (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+ * License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
+ * USA.
+-->
+
+
+<!-- The following animation uses two ObjectAnimators that animate two properties called
+     xFraction and yFraction concurrently. The xFraction property uses a linear interpolator
+     and the yFraction property uses a bounce interpolator. Note that the property names
+     xFraction and yFraction are custom and the animation framework will derive Java
+     method names that it will invoke via the Java reflection API. E.g., property
+     xFraction will result in invocations of methods getXFraction() and setXFraction()
+     (see class MyImageView that implements those getters and setters) -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="xFraction"
+        android:duration="5000"
+        android:valueTo="1"
+        android:valueType="floatType"/>
+    <objectAnimator
+        android:propertyName="yFraction"
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:duration="5000"
+        android:valueTo="1"
+        android:valueType="floatType"/>
+</set>
