@@ -95,7 +95,6 @@ public class SayHelloActivity extends Activity {
          */
         button.setOnClickListener(new OnClickListener() {
 
-            @Override
             public void onClick(View v) {
                 /*
                  * Read the name the user entered, prepend "Hello, " to the

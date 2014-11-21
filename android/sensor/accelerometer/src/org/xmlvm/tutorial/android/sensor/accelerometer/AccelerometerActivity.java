@@ -71,7 +71,6 @@ public class AccelerometerActivity extends Activity implements SensorEventListen
      * changed. This is not applicable for the accelerometer sensor so the
      * implementation is left empty.
      */
-    @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Intentionally left empty
 
@@ -81,7 +80,6 @@ public class AccelerometerActivity extends Activity implements SensorEventListen
      * This method will be called whenever there are sensor events (in this case
      * accelerometer events).
      */
-    @Override
     public void onSensorChanged(SensorEvent event) {
         /*
          * The SensorEvent object contains a field 'values' which is an array of
