@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.helloworld.prog;
+package org.androidtutorials.helloworld.prog;
 
 import android.app.Activity;
 import android.os.Bundle;

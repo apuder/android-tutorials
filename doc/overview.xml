@@ -35,8 +35,8 @@
 
     <application name="HelloWorld (prog)">
       <files base="android/helloworld/prog">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/prog/HelloWorldActivity.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/prog/HelloWorldActivity.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation without any
       layout resources.</text>
