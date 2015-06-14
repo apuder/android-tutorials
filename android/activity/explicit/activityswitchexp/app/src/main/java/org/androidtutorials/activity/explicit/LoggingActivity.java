@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.activity.explicit;
+package org.androidtutorials.activity.explicit;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -186,9 +186,9 @@
 
 	<application name="Activities (explicit)">
       <files base="android/activity/explicit/activityswitchexp">
-        <file name="src/org/xmlvm/tutorial/android/activity/explicit/BlueActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/explicit/YellowActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/explicit/LoggingActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/explicit/BlueActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/explicit/YellowActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/explicit/LoggingActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating the explicit switching between activities
 	with the called activity providing a result to the calling activity. Additionally

@@ -18,12 +18,14 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.activity.explicit;
+package org.androidtutorials.activity.explicit;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import org.androidtutorials.activity.explicit.R;
 
 /**
  * This application demonstrates the Activty lifecycle. An application typically
