@@ -200,11 +200,11 @@
 
   <application name="Activities (implicit)">
       <files base="android/activity/implicit">
-        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/BlueActivity.java"/>
-        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/RedActivity.java"/>
-        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/YellowActivity.java"/>
-        <file name="activityswitchimplicit/AndroidManifest.xml"/>
-        <file name="activityswitchimplicitgreen/src/org/xmlvm/tutorial/android/activity/implicit/green/GreenActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/BlueActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/android/activity/implicit/RedActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/YellowActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/AndroidManifest.xml"/>
+        <file name="activityswitchimplicitgreen/src/org/xmlv/tutorial/android/activity/implicit/green/GreenActivity.java"/>
         <file name="activityswitchimplicitgreen/AndroidManifest.xml"/>
       </files>
       <text>Two Android applications demonstrating the implicit launching of activities. There are three activities

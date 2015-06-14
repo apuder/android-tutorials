@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.activity.implicit;
+package org.androidtutorials.activity.implicit;
 
 import android.app.Activity;
 import android.os.Bundle;

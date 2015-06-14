@@ -8,7 +8,7 @@ to ACTION_COLOR declared in BlueActivity.
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.xmlvm.tutorial.android.activity.implicit"
+    package="org.androidtutorials.activity.implicit"
     android:versionCode="1"
     android:versionName="1.0" >
 

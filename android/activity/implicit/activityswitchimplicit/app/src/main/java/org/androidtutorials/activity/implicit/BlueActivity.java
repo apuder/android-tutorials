@@ -1,9 +1,11 @@
-package org.xmlvm.tutorial.android.activity.implicit;
+package org.androidtutorials.activity.implicit;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import org.androidtutorials.activity.implicit.R;
 
 /**
  * This tutorial is a variation of the explicit activity switch demo. There are
@@ -41,9 +43,9 @@ public class BlueActivity extends LoggingActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.blue);
+        setContentView(org.androidtutorials.activity.implicit.R.layout.blue);
 
-        resultField = (TextView) findViewById(R.id.result);
+        resultField = (TextView) findViewById(org.androidtutorials.activity.implicit.R.id.result);
     }
 
     @Override

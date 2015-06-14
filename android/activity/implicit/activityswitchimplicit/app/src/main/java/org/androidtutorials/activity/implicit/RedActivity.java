@@ -1,17 +1,19 @@
-package org.xmlvm.tutorial.android.activity.implicit;
+package org.androidtutorials.activity.implicit;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class YellowActivity extends LoggingActivity {
+import org.androidtutorials.activity.implicit.R;
+
+public class RedActivity extends LoggingActivity {
 
     private static int calls = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.yellow);
+        setContentView(org.androidtutorials.activity.implicit.R.layout.red);
     }
 
     @Override
