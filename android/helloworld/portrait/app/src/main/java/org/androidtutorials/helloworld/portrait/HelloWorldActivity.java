@@ -18,10 +18,12 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.helloworld.portrait;
+package org.androidtutorials.helloworld.portrait;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import org.androidtutorials.helloworld.portrait.R;
 
 /**
  * This version of Hello World locks into portrait mode. In terms of
