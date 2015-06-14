@@ -18,13 +18,15 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.sayhello.decl;
+package org.androidtutorials.sayhello.decl;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.androidtutorials.sayhello.decl.R;
 
 /**
  * This version of SayHello makes use of layout resources. The layout is

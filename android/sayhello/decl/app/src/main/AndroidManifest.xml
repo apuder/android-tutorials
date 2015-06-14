@@ -22,13 +22,13 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.xmlvm.tutorial.android.sayhello.decl"
+      package="org.androidtutorials.sayhello.decl"
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8" />
 
     <application android:icon="@drawable/icon" android:label="SayHello (decl)">
-        <activity android:name=".SayHelloActivity"
+        <activity android:name="org.androidtutorials.sayhello.decl.SayHelloActivity"
                   android:label="SayHello (decl)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

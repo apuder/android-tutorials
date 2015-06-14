@@ -136,8 +136,8 @@
 
 	<application name="SayHello (decl)">
       <files base="android/sayhello/decl">
-        <file name="src/org/xmlvm/tutorial/android/sayhello/decl/SayHelloActivity.java"/>
-        <file name="res/layout/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/sayhello/decl/SayHelloActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
       </files>
 	<text>A simple Android application demonstrating simple event handling with
 	a button as well as accessing UI widgets. The application is implemented
