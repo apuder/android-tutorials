@@ -18,10 +18,12 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.layout.relative;
+package org.androidtutorials.layout.relative;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import org.androidtutorials.layout.relative.R;
 
 /**
  * This example shows the use of a RelativeLayout for both portrait and

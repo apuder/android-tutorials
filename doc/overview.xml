@@ -116,8 +116,8 @@
 
 	<application name="Layout (relative)">
       <files base="android/layout/relative">
-        <file name="src/org/xmlvm/tutorial/android/layout/relative/LayoutActivity.java"/>
-        <file name="res/layout/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/layout/relative/LayoutActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
       </files>
       <text>A simple Android application demonstrating layout capabilities using
 	  a RelativeLayout.</text>
