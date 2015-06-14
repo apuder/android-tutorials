@@ -22,13 +22,13 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.xmlvm.tutorial.android.touch"
+      package="org.androidtutorials.touch"
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8" />
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".MultiTouchActivity"
+        <activity android:name="org.androidtutorials.touch.MultiTouchActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

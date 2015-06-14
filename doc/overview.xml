@@ -167,7 +167,7 @@
 	
 	<application name="MultiTouch">
       <files base="android/touch">
-        <file name="src/org/xmlvm/tutorial/android/touch/MultiTouchActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/touch/MultiTouchActivity.java"/>
       </files>
 	<text>A simple multi-touch example. Fingers placed on the screen
     are tracked while being moved.</text>

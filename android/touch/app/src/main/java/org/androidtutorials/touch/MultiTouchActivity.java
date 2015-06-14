@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.touch;
+package org.androidtutorials.touch;
 
 import java.util.ArrayList;
 import java.util.List;
