@@ -18,11 +18,13 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.helloworld.fullscreen;
+package org.androidtutorials.helloworld.fullscreen;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
+
+import org.androidtutorials.helloworld.fullscreen.R;
 
 /**
  * A version of Hello World that runs in fullscreen mode which can be enabled
