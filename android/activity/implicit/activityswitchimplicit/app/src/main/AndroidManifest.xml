@@ -28,18 +28,17 @@ to ACTION_COLOR declared in BlueActivity.
         </activity>
         <activity android:name=".YellowActivity" >
             <intent-filter android:label="Yellow Activity" >
-                <action android:name="org.xmlvm.tutorial.intent.action.ACTION_COLOR" />
+                <action android:name="org.androidtutorials.intent.action.ACTION_COLOR" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".RedActivity" >
             <intent-filter android:label="Red Activity" >
-                <action android:name="org.xmlvm.tutorial.intent.action.ACTION_COLOR" />
+                <action android:name="org.androidtutorials.intent.action.ACTION_COLOR" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

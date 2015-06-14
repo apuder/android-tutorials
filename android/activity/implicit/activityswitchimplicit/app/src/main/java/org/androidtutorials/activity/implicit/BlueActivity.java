@@ -37,7 +37,7 @@ public class BlueActivity extends LoggingActivity {
      * identify an activity that will respond to this action. Note that the very
      * same string is used in AndroidManifest.xml to define an intent filter.
      */
-    public static final String ACTION_COLOR = "org.xmlvm.tutorial.intent.action.ACTION_COLOR";
+    public static final String ACTION_COLOR = "org.androidtutorials.intent.action.ACTION_COLOR";
     private TextView           resultField;
 
     @Override
