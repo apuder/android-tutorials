@@ -45,9 +45,12 @@
 
     <application name="HelloWorld (decl)">
       <files base="android/helloworld/decl">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/decl/HelloWorldActivity.java"/>
-        <file name="gen/org/xmlvm/tutorial/android/helloworld/decl/R.java"/>
-        <file name="res/layout/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/decl/HelloWorldActivity.java"/>
+	<!-- Below is the path of the generated R.java File. But note that it will not be stroed in repo
+         * since the app/build durectory is in the .gitignore file 
+	--!>
+        <file name="app/build/generated/source/r/debug/org/androidtutorials/helloworld/decl/app/build/generated/source/r/debug/org/androidtutorials/helloworld/decl/R.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view.</text>

@@ -28,7 +28,7 @@ ADDED from AndroidManifest.xml:30:5
 		ADDED from AndroidManifest.xml:30:48
 	android:icon
 		ADDED from AndroidManifest.xml:30:18
-activity#org.xmlvm.tutorial.android.helloworld.decl.HelloWorldActivity
+activity#org.androidtutorials.helloworld.decl.HelloWorldActivity
 ADDED from AndroidManifest.xml:31:9
 	android:label
 		ADDED from AndroidManifest.xml:32:19

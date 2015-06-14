@@ -18,11 +18,12 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.helloworld.decl;
+package org.androidtutorials.helloworld.decl;
 
 import android.app.Activity;
 import android.os.Bundle;
 
+import org.androidtutorials.helloworld.decl.R;
 /**
  * This version of Hello World uses a declarative layout and is functionally
  * identical to the programmatic version. The layout is described in a layout

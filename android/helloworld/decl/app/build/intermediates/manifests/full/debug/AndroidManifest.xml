@@ -32,7 +32,7 @@
         android:icon="@drawable/icon"
         android:label="HelloWorld (decl)" >
         <activity
-            android:name="org.xmlvm.tutorial.android.helloworld.decl.HelloWorldActivity"
+            android:name="org.androidtutorials.helloworld.decl.HelloWorldActivity"
             android:label="HelloWorld (decl)" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

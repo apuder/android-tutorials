@@ -22,13 +22,13 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.xmlvm.tutorial.android.helloworld.decl"
+      package="org.androidtutorials.helloworld.decl"
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8" />
 
     <application android:icon="@drawable/icon" android:label="HelloWorld (decl)">
-        <activity android:name=".HelloWorldActivity"
+        <activity android:name="org.androidtutorials.helloworld.decl.HelloWorldActivity"
                   android:label="HelloWorld (decl)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
