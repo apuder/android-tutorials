@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.handler;
+package org.androidtutorials.handler;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.os.Message;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.androidtutorials.handler.R;
 
 /**
  * This application creates a Handler that is associated with the UI thread.

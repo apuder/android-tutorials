@@ -232,7 +232,7 @@
 
 	<application name="Handler">
       <files base="android/handler">
-        <file name="src/org/xmlvm/tutorial/android/handler/FibonacciActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/handler/FibonacciActivity.java"/>
       </files>
 	<text>Shows the use of a Handler to post messages to the UI thread.
 	</text>
