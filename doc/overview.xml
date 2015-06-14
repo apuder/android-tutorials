@@ -384,10 +384,10 @@
     
   <application name="Animation">
       <files base="android/animation">
-        <file name="src/org/xmlvm/tutorial/android/animation/MainActivity.java"></file>
-        <file name="src/org/xmlvm/tutorial/android/animation/MyImageView.java"></file>
-        <file name="res/layout/activity_main.xml"></file>
-        <file name="res/animator/bounce.xml"></file>
+        <file name="app/src/main/java/org/androidtutorials/animation/MainActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/animation/MyImageView.java"></file>
+        <file name="app/src/main/res/layout/activity_main.xml"></file>
+        <file name="app/src/main/res/animator/bounce.xml"></file>
       </files>
       <text>Uses property animation to bounce a ball across the screen.</text>
       <xmlvm-status>Not working</xmlvm-status>

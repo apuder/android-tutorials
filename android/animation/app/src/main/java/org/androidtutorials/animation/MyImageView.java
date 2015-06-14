@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.animation;
+package org.androidtutorials.animation;
 
 import android.content.Context;
 import android.util.AttributeSet;
