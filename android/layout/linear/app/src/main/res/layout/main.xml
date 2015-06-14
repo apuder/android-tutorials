@@ -4,7 +4,7 @@
 <!-- 
 Layout resource to be used when the device is in portrait orientation.
 It uses a LinearLayout on top-level of the view hierarchy with three nested
-LinerarLayouts to achieve the portrait orientation of the six buttons.
+LinearLayouts to achieve the portrait orientation of the six buttons.
 The XML-attributes specify layout parameters for the respective widget.
 Note that the layout parameters must match the enclosing container. In
 this particular example the buttons are embedded in a LinearLayout,
