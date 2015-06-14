@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.alert;
+package org.androidtutorials.alert;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.androidtutorials.alert.R;
 
 /**
  * This tutorial shows two different kinds of alerts: popup, modal dialogs and

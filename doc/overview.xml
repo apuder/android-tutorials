@@ -159,7 +159,7 @@
 	
 	<application name="Alerts">
       <files base="android/alerts">
-        <file name="src/org/xmlvm/tutorial/android/alert/AlertActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/alert/AlertActivity.java"/>
       </files>
 	<text>Shows the use of toasts and alert dialogs</text>
 	<xmlvm-status>Not working</xmlvm-status>
