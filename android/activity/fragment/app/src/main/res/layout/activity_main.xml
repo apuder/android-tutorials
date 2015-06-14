@@ -31,7 +31,7 @@
          of the Java class implementing the fragment. -->
     <fragment
         android:id="@+id/fruit_list"
-        android:name="org.xmlvm.tutorial.android.activity.fragment.FruitListFragment"
+        android:name="org.androidtutorials.activity.fragment.FruitListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

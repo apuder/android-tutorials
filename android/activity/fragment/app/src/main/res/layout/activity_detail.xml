@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/fragment_detail"
-        android:name="org.xmlvm.tutorial.android.activity.fragment.DetailFragment"
+        android:name="org.androidtutorials.activity.fragment.DetailFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

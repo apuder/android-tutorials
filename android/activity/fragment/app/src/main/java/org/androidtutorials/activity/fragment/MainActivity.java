@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.activity.fragment;
+package org.androidtutorials.activity.fragment;
 
 import android.app.Activity;
 import android.os.Bundle;

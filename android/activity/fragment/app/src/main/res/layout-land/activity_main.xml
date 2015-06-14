@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/fragment_fruit_list"
-        android:name="org.xmlvm.tutorial.android.activity.fragment.FruitListFragment"
+        android:name="org.androidtutorials.activity.fragment.FruitListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
@@ -44,7 +44,7 @@
 
     <fragment
         android:id="@+id/fragment_detail"
-        android:name="org.xmlvm.tutorial.android.activity.fragment.DetailFragment"
+        android:name="org.androidtutorials.activity.fragment.DetailFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2" />

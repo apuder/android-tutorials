@@ -18,12 +18,13 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.activity.fragment;
+package org.androidtutorials.activity.fragment;
 
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
+import org.androidtutorials.activity.fragment.R;
 /**
  * DetailActivity uses the R.layout.activity_detail layout as its main content
  * view. The latter references DetailFragment to show the details of a

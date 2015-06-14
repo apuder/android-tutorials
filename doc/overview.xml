@@ -215,14 +215,14 @@
 
   <application name="Fragments">
       <files base="android/activity/fragment">
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/MainActivity.java"/>
-        <file name="res/layout/activity_main.xml"/>
-        <file name="res/layout-land/activity_main.xml"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/FruitListFragment.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/DetailFragment.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/DetailActivity.java"/>
-        <file name="res/layout/activity_detail.xml"/>
-        <file name="res/layout/fragment_detail.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/MainActivity.java"/>
+        <file name="app/src/main/res/layout/activity_main.xml"/>
+        <file name="app/src/main/res/layout-land/activity_main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/FruitListFragment.java"/>
+        <file name="app/src/main/org/java/androidtutorials/activity/fragment/DetailFragment.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/DetailActivity.java"/>
+        <file name="app/src/main/res/layout/activity_detail.xml"/>
+        <file name="app/src/main/res/layout/fragment_detail.xml"/>
       </files>
   <text>Two fragments that are shown side-by-side in landscape mode and in
     two separate activities in portrait mode.
