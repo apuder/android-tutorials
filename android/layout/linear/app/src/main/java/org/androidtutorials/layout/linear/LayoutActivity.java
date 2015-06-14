@@ -18,10 +18,12 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.layout.linear;
+package org.androidtutorials.layout.linear;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import org.androidtutorials.layout.linear.R;
 
 /**
  * This example shows the use of a LinearLayout for both portrait and landscape

@@ -91,7 +91,7 @@
 
     <application name="HelloWorld (i18n)">
       <files base="android/helloworld/i18n">
-        <file name="app/src/main/java/org//androidtutorials/helloworld/i18n/HelloWorldActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/i18n/HelloWorldActivity.java"/>
         <file name="app/src/main/res/layout/main.xml"/>
         <file name="app/src/main/res/values/strings.xml"/>
         <file name="app/src/main/res/values-de/strings.xml"/>
@@ -105,9 +105,9 @@
 
 	<application name="Layout (linear)">
       <files base="android/layout/linear">
-        <file name="src/org/xmlvm/tutorial/android/layout/linear/LayoutActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="res/layout-land/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/layout/linear/LayoutActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/layout-land/main.xml"/>
       </files>
       <text>A simple Android application demonstrating layout capabilities using
 	  a LinearLayout.</text>
