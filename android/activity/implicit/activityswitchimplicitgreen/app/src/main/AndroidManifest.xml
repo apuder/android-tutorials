@@ -9,7 +9,7 @@ ActivitySwitchImplicit.
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.xmlvm.tutorial.android.activity.implicit.green"
+    package="org.androidtutorials.activity.implicit.green"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,10 +19,10 @@ ActivitySwitchImplicit.
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".GreenActivity"
+            android:name="org.androidtutorials.activity.implicit.green.GreenActivity"
             android:label="@string/app_name" >
             <intent-filter android:label="Green Activity" >
-                <action android:name="org.xmlvm.tutorial.intent.action.ACTION_COLOR" />
+                <action android:name="org.androidtutorials.intent.action.ACTION_COLOR" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

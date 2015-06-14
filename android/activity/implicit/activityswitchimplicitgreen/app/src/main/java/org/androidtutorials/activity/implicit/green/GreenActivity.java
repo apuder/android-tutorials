@@ -1,9 +1,11 @@
-package org.xmlvm.tutorial.android.activity.implicit.green;
+package org.androidtutorials.activity.implicit.green;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import org.androidtutorials.activity.implicit.green.R;
 
 /**
  * GreenActivity is the only activity of a separate Android application called
