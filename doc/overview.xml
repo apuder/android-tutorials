@@ -241,8 +241,8 @@
 
   <application name="AsyncTask">
       <files base="android/asynctask">
-        <file name="src/org/xmlvm/tutorial/android/asynctask/MainActivity.java"/>
-        <file name="res/layout/activity_main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/asynctask/MainActivity.java"/>
+        <file name="app/src/main/res/layout/activity_main.xml"/>
       </files>
   <text>Shows usage of AsyncTask to simplify background processing.
   </text>

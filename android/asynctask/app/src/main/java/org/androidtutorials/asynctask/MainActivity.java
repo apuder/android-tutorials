@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.asynctask;
+package org.androidtutorials.asynctask;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -31,6 +31,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+
+import org.androidtutorials.asynctask.R;
 
 /**
  * This application shows the usage of class AsyncTask that is a convenience
