@@ -21,18 +21,20 @@
  * USA.
 -->
 
-<!-- 
-The XML-attribute 'text' of tag <TextView> does not contain a string literal, but rather
-a reference to a string defined in strings.xml. Depending on the local settings of the
-device, the file strings.xml is read from different directories. The name of the
-directory contains the two letter country code by which different locales can be
-distinguished. Prefix "@string" designates a string resource to be looked up in
-strings.xml. The suffix 'greeting' designates a symbolic label used to identify
-the particular string.
--->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent">
-	<TextView android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:layout_centerInParent="true"
-		android:text="@string/greeting" />
-</RelativeLayout>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.androidtutorials.helloworld.i18n"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="org.androidtutorials.helloworld.i18n.HelloWorldActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

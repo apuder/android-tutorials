@@ -91,10 +91,10 @@
 
     <application name="HelloWorld (i18n)">
       <files base="android/helloworld/i18n">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/i18n/HelloWorldActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="res/values/strings.xml"/>
-        <file name="res/values-de/strings.xml"/>
+        <file name="app/src/main/java/org//androidtutorials/helloworld/i18n/HelloWorldActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/values/strings.xml"/>
+        <file name="app/src/main/res/values-de/strings.xml"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view being showed. Application name
