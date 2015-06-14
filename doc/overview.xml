@@ -126,7 +126,7 @@
 
 	<application name="SayHello (prog)">
       <files base="android/sayhello/prog">
-        <file name="src/org/xmlvm/tutorial/android/sayhello/prog/SayHelloActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/sayhello/prog/SayHelloActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating simple event handling with
 	a button as well as accessing UI widgets. The application is implemented

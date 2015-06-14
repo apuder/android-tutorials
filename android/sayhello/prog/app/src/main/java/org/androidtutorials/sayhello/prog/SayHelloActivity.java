@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.sayhello.prog;
+package org.androidtutorials.sayhello.prog;
 
 import android.app.Activity;
 import android.os.Bundle;
