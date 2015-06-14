@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.widgets;
+package org.androidtutorials.widgets;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -29,6 +29,8 @@ import android.widget.DatePicker;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import org.androidtutorials.widgets.R;
 
 /**
  * 

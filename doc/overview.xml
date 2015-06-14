@@ -149,9 +149,9 @@
 
 	<application name="Widgets">
       <files base="android/widgets">
-        <file name="src/org/xmlvm/tutorial/android/widgets/WidgetActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="res/values/strings.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/widgets/WidgetActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/values/strings.xml"/>
       </files>
 	<text>Application to demonstrate the User Interface widgets in Android</text>
 	<xmlvm-status>Not working</xmlvm-status>
