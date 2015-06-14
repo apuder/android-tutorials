@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.drawing;
+package org.androidtutorials.drawing;
 
 import android.app.Activity;
 import android.graphics.Canvas;
@@ -27,6 +27,8 @@ import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+
+import org.androidtutorials.drawing.R;
 
 /**
  * This application demonstrates simple drawing primitives. A View subclass may

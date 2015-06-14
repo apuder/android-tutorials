@@ -176,7 +176,7 @@
 
 	<application name="Drawing">
       <files base="android/drawing">
-        <file name="src/org/xmlvm/tutorial/android/drawing/DrawingActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/drawing/DrawingActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating drawing capabilities using
 	the Canvas and Paint classes.
