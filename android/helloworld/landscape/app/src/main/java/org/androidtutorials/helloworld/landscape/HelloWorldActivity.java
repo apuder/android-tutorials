@@ -18,10 +18,12 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.helloworld.landscape;
+package org.androidtutorials.helloworld.landscape;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import org.androidtutorials.helloworld.landscape.R;
 
 /**
  * This version of Hello World locks into landscape mode. In terms of
