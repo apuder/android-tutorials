@@ -375,7 +375,7 @@
 	
     <application name="Sound">
       <files base="android/sound">
-        <file name="src/org/xmlvm/tutorial/android/sound/SoundActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/sound/SoundActivity.java"></file>
       </files>
       <text>Simple Android aplication to demonstrate use of MediaPlayer for audio playback.</text>
       <xmlvm-status>Working. Objc backend not working due to missing reflection 

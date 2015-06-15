@@ -1,6 +1,4 @@
-package org.xmlvm.tutorial.android.sound;
-
-import java.io.IOException;
+package org.androidtutorials.sound;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
@@ -10,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
+import java.io.IOException;
 /**
  * This application demonstrates the use of the MediaPlayer. The application has
  * a single activity : SoundActivity. A button is provided which allows the user
