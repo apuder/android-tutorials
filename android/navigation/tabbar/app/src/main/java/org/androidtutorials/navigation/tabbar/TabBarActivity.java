@@ -18,13 +18,15 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.navigation.tabbar;
+package org.androidtutorials.navigation.tabbar;
 
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
+
+import org.xmlvm.tutorial.android.navigation.tabbar.R;
 
 /**
  * This application demonstrates the use of a TabBar. A TabBar allows to select

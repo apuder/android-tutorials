@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.navigation.tabbar;
+package org.androidtutorials.navigation.tabbar;
 
 import android.app.Activity;
 import android.os.Bundle;
