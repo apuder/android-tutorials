@@ -20,17 +20,6 @@
 
 package org.androidtutorials.storage;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
-import java.util.List;
-
-import org.androidtutorials.storage.sql.DatabaseHandler;
-import org.androidtutorials.storage.sql.Employee;
-
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -43,6 +32,16 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import org.androidtutorials.storage.sql.DatabaseHandler;
+import org.androidtutorials.storage.sql.Employee;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.util.List;
 /**
  * This demo application shows four different ways of making data persistent:
  * (1) Shared preferences, (2) Writing to external storage, (3) SQL database,

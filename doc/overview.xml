@@ -395,9 +395,9 @@
 
   <application name="Storage">
       <files base="android/storage">
-        <file name="src/org/xmlvm/tutorial/android/storage/MainActivity.java"></file>
-        <file name="src/org/xmlvm/tutorial/android/storage/sql/DatabaseHandler.java"></file>
-        <file name="src/org/xmlvm/tutorial/android/storage/sql/Employee.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/storage/MainActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/storage/sql/DatabaseHandler.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/storage/sql/Employee.java"></file>
       </files>
       <text>Show various ways of making data persistent.</text>
       <xmlvm-status>Not working</xmlvm-status>
