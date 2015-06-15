@@ -342,7 +342,7 @@
 	
 	<application name="Gyroscope">
       <files base="android/sensor/gyroscope">
-        <file name="src/org/xmlvm/tutorial/android/sensor/gyroscope/GyroActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/sensor/gyroscope/GyroActivity.java"></file>
       </files>
       <text>Simple Android aplication to demonstrate use of Gyroscope sensor in Android.</text>
       <xmlvm-status>Not working</xmlvm-status>

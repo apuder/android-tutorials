@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.sensor.gyroscope"
+        applicationId "org.androidtutorials.sensor.gyroscope"
         minSdkVersion 8
         targetSdkVersion 8
     }

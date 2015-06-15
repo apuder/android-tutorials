@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.sensor.gyroscope;
+package org.androidtutorials.sensor.gyroscope;
 
 import android.app.Activity;
 import android.hardware.Sensor;
