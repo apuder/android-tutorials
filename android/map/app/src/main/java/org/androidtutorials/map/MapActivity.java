@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.map;
+package org.androidtutorials.map;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -29,6 +29,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
+import org.androidtutorials.map.R;
 /**
  * This application uses the Google API to display a map of San Francisco. This
  * API is not part of the core Android API but is Google-specific. In order to

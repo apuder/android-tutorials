@@ -323,9 +323,9 @@
 
 	<application name="Map">
       <files base="android/map">
-        <file name="src/org/xmlvm/tutorial/android/map/MapActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/android/map/MapActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>A simple Android application demonstrating using MapActivity from the Google Android API.</text>
 	<xmlvm-status>Not working</xmlvm-status>
