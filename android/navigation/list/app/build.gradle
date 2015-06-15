@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.navigation.list"
+        applicationId "org.androidtutorials.navigation.list"
         minSdkVersion 8
         targetSdkVersion 8
         compileOptions {

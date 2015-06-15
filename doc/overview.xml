@@ -303,8 +303,8 @@
 
 	<application name="List">
       <files base="android/navigation/list">
-        <file name="src/org/xmlvm/tutorial/android/navigation/list/FruitListActivity.java"/>
-        <file name="res/layout/list_item.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/navigation/list/FruitListActivity.java"/>
+        <file name="app/src/main/res/layout/list_item.xml"/>
       </files>
 	<text>A simple Android application demonstrating using ListActivities and
 	ArrayAdapters.</text>

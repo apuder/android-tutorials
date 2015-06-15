@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.navigation.list;
+package org.androidtutorials.navigation.list;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
