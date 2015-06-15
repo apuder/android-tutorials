@@ -18,9 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.sensor.gps;
-
-import org.xmlvm.tutorial.android.sensor.gps.R;
+package org.androidtutorials.sensor.gps;
 
 import android.app.Activity;
 import android.content.Context;

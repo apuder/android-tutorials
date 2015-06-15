@@ -350,7 +350,7 @@
 
 	<application name="GPS">
       <files base="android/sensor/gps">
-        <file name="src/org/xmlvm/tutorial/android/sensor/gps/GPSActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/sensor/gps/GPSActivity.java"/>
       </files>
 	<text>A simple Android application displaying the current longitude and latitude.</text>
 	<xmlvm-status>Not working</xmlvm-status>
