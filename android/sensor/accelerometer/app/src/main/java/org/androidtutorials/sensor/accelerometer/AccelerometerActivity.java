@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.sensor.accelerometer;
+package org.androidtutorials.sensor.accelerometer;
 
 import android.app.Activity;
 import android.hardware.Sensor;

@@ -333,7 +333,7 @@
 
 	<application name="Accelerometer">
       <files base="android/sensor/accelerometer">
-        <file name="src/org/xmlvm/tutorial/android/sensor/accelerometer/AccelerometerActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/sensor/accelerometer/AccelerometerActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating how to get the accelerometer
 	sensor readings.</text>
