@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.menu;
+package org.androidtutorials.menu;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -41,9 +41,9 @@ public class MenuActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(org.androidtutorials.menu.R.layout.main);
 
-        lblItem = (TextView) findViewById(R.id.lblItem);
+        lblItem = (TextView) findViewById(org.androidtutorials.menu.R.id.lblItem);
     }
 
     /*
@@ -61,7 +61,7 @@ public class MenuActivity extends Activity {
         /*
          * Load the file res/menu/options.xml
          */
-        inflater.inflate(R.menu.options, menu);
+        inflater.inflate(org.androidtutorials.menu.R.menu.options, menu);
         return true;
     }
 
@@ -76,13 +76,13 @@ public class MenuActivity extends Activity {
          * an appropriate label in the main view's TextView.
          */
         switch (item.getItemId()) {
-        case R.id.mnuAdd:
+        case org.androidtutorials.menu.R.id.mnuAdd:
             lblItem.setText("Add");
             return true;
-        case R.id.mnuDelete:
+        case org.androidtutorials.menu.R.id.mnuDelete:
             lblItem.setText("Delete");
             return true;
-        case R.id.mnuSearch:
+        case org.androidtutorials.menu.R.id.mnuSearch:
             lblItem.setText("Search");
             return true;
         default:

@@ -283,8 +283,8 @@
 
 	<application name="Menu">
       <files base="android/navigation/menu">
-        <file name="src/org/xmlvm/tutorial/android/menu/MenuActivity.java"/>
-        <file name="res/menu/options.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/menu/MenuActivity.java"/>
+        <file name="app/src/main/res/menu/options.xml"/>
       </files>
 	<text>A simple Android application demonstrating creating and handling option
 	menus.</text>
