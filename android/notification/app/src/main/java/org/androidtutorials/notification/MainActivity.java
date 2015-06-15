@@ -18,7 +18,7 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.notification;
+package org.androidtutorials.notification;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -36,6 +36,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.androidtutorials.notification.R;
 public class MainActivity extends Activity {
 
     /**

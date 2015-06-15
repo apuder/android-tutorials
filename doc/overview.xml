@@ -251,7 +251,7 @@
 
   <application name="Notification">
       <files base="android/notification">
-        <file name="src/org/xmlvm/tutorial/android/notification/MainActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/notification/MainActivity.java"/>
       </files>
   <text>Shows usage of normal view notification.
   </text>
