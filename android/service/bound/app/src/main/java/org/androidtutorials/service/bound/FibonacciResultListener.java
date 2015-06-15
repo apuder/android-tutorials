@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.service.bound;
+package org.androidtutorials.service.bound;
 
 /**
  * FibonacciResultListener is a simple interface that FibonacciService uses to

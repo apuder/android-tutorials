@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.service.bound;
+package org.androidtutorials.service.bound;
 
 import android.app.Activity;
 import android.content.ComponentName;

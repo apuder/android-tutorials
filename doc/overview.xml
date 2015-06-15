@@ -271,10 +271,10 @@
 
 	<application name="Service (bound)">
       <files base="android/service/bound">
-        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciResultListener.java"/>
-        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciService.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciResultListener.java"/>
+        <file name="app/src/main/java/org/androidtutorials//service/bound/FibonacciService.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>Demonstrates the use of a bound service.
 	</text>
