@@ -358,7 +358,7 @@
 	
 	<application name="Camera">
       <files base="android/sensor/camera">
-        <file name="src/org/xmlvm/tutorial/android/sensor/camera/CameraActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/sensor/camera/CameraActivity.java"></file>
       </files>
       <text>Simple Android aplication to demonstrate use of camera in Android.</text>
       <xmlvm-status>Not working</xmlvm-status>
