@@ -18,20 +18,20 @@
  * USA.
  */
 
-package org.xmlvm.tutorial.android.sensor.nfcreader;
+package org.androidtutorials.sensor.nfcreader;
 
-import java.nio.charset.Charset;
-import java.util.Arrays;
-
+import android.app.Activity;
+import android.content.Intent;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.app.Activity;
-import android.content.Intent;
 import android.view.Menu;
 import android.widget.TextView;
+
+import java.nio.charset.Charset;
+import java.util.Arrays;
 
 /**
  * NfcTagReader is a simple NFC tag reader. It is limited in the following ways:

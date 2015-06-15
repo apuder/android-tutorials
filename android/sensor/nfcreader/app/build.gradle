@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.sensor.nfcreader"
+        applicationId "org.androidtutorials.sensor.nfcreader"
         minSdkVersion 9
         targetSdkVersion 15
     }

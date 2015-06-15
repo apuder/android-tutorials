@@ -366,8 +366,8 @@
 	
 	<application name="NFC Reader">
       <files base="android/sensor/nfcreader">
-        <file name="src/org/xmlvm/tutorial/android/sensor/nfcreader/NfcTagReader.java"></file>
-        <file name="AndroidManifest.xml"></file>
+        <file name="app/src/main/java/org/androidtutorials/sensor/nfcreader/NfcTagReader.java"></file>
+        <file name="app/src/main/AndroidManifest.xml"></file>
       </files>
       <text>Read NDEF-formatted NFC tags.</text>
       <xmlvm-status>Not working</xmlvm-status>

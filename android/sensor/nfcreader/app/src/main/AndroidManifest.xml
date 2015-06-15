@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.xmlvm.tutorial.android.sensor.nfcreader"
+    package="org.androidtutorials.sensor.nfcreader"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="org.xmlvm.tutorial.android.sensor.nfcreader.NfcTagReader"
+            android:name="org.androidtutorials.sensor.nfcreader.NfcTagReader"
             android:label="@string/title_activity_nfc"
             android:launchMode="singleInstance" >
             <intent-filter>

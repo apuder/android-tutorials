@@ -1,4 +1,4 @@
-    
+
 package org.androidtutorials.sensor.gyroscope;
 
 import android.app.Activity;
