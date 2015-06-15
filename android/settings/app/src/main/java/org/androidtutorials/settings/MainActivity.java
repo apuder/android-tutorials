@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.settings;
+package org.androidtutorials.settings;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.TextView;
+
+import org.androidtutorials.settings.R;
 
 /**
  * Settings are usually used to allow the user change the behavior of an app. In

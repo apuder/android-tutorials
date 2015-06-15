@@ -313,9 +313,9 @@
 
 	<application name="Settings">
       <files base="android/settings">
-        <file name="src/org/xmlvm/tutorial/android/settings/MainActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/settings/SettingsActivity.java"/>
-        <file name="res/xml/settings.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/settings/MainActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/settings/SettingsActivity.java"/>
+        <file name="app/src/main/res/xml/settings.xml"/>
       </files>
 	<text>Using settings under Android.</text>
 	<xmlvm-status>Not working</xmlvm-status>

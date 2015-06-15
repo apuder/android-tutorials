@@ -1,7 +1,9 @@
-package org.xmlvm.tutorial.android.settings;
+package org.androidtutorials.settings;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+
+import org.androidtutorials.settings.R;
 
 /**
  * SettingsActivity is derived from PreferenceActivity and acts as an
