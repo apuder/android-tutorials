@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.service.bound"
+        applicationId "org.androidtutorial.service.bound"
         minSdkVersion 8
         targetSdkVersion 8
     }
