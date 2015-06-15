@@ -260,9 +260,9 @@
 
 	<application name="Service (started)">
       <files base="android/service/started">
-        <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciService.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/service/started/FibonacciActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/service/started/FibonacciService.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>Demonstrates the use of a started service.
 	</text>

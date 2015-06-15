@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.xmlvm.tutorial.android.service.started"
+    package="org.androidtutorials.service.started"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".FibonacciActivity"
+            android:name="org.androidtutorials.service.started.FibonacciActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
         In order to declare a service, its class must be derived from base class Service
         and it must be declared in AndroidManifest.xml
         -->
-        <service android:name=".FibonacciService" />
+        <service android:name="org.androidtutorials.service.started.FibonacciService" />
     </application>
 
 </manifest>

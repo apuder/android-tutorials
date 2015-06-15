@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.service.started;
+package org.androidtutorials.service.started;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -8,6 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
+
+import org.xmlvm.tutorial.android.service.started.R;
 
 /**
  * FibonacciService is an example of a started service. The service will

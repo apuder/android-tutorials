@@ -1,4 +1,4 @@
-package org.xmlvm.tutorial.android.service.started;
+package org.androidtutorials.service.started;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.xmlvm.tutorial.android.service.started.R;
 
 /**
  * FibonacciActivity is an example of a started service. Once the application is
