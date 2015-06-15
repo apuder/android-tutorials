@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.xmlvm.tutorial.android.service.started.R;
-
 /**
  * FibonacciActivity is an example of a started service. Once the application is
  * launched, type in an integer into the input field and press the button.

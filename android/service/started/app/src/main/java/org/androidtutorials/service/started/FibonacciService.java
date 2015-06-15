@@ -9,8 +9,6 @@ import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 
-import org.xmlvm.tutorial.android.service.started.R;
-
 /**
  * FibonacciService is an example of a started service. The service will
  * automatically be started whenever a client sends an intent and will also
