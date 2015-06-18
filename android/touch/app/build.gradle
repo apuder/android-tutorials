@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.touch"
+        applicationId "org.androidtutorials.touch"
         minSdkVersion 8
         targetSdkVersion 8
         compileOptions {

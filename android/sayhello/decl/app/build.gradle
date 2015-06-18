@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.sayhello.decl"
+        applicationId "org.androidtutorials.sayhello.decl"
         minSdkVersion 8
         targetSdkVersion 8
         compileOptions {

@@ -4,7 +4,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.map"
+        applicationId "org.androidtutorials.map"
         minSdkVersion 19
         targetSdkVersion 19
         compileOptions {

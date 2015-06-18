@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.helloworld.portrait"
+        applicationId "org.androidtutorials.helloworld.portrait"
         minSdkVersion 8
         targetSdkVersion 8
         compileOptions {

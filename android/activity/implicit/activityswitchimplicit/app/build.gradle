@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.activity.implicit"
+        applicationId "org.androidtutorials.activity.implicit"
         minSdkVersion 8
         targetSdkVersion 8
     }

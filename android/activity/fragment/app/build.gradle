@@ -4,7 +4,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.activity.fragment"
+        applicationId "org.activitytutorials.fragment"
         minSdkVersion 11
         targetSdkVersion 19
     }

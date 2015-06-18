@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.xmlvm.tutorial.android.asynctask"
+        applicationId "org.androidtutorials.asynctask"
         minSdkVersion 11
         targetSdkVersion 19
     }
