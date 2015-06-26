@@ -45,9 +45,12 @@
 
     <application name="HelloWorld (decl)">
       <files base="android/helloworld/decl">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/decl/HelloWorldActivity.java"/>
-        <file name="gen/org/xmlvm/tutorial/android/helloworld/decl/R.java"/>
-        <file name="res/layout/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/decl/HelloWorldActivity.java"/>
+	<!-- Below is the path of the generated R.java File. But note that it will not be stroed in repo
+         * since the app/build durectory is in the .gitignore file 
+	--!>
+        <file name="app/build/generated/source/r/debug/org/androidtutorials/helloworld/decl/app/build/generated/source/r/debug/org/androidtutorials/helloworld/decl/R.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view.</text>
@@ -56,7 +59,7 @@
 
     <application name="HelloWorld (fullscreen)">
       <files base="android/helloworld/fullscreen">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/fullscreen/HelloWorldActivity.java"/>
+        <file name="app/src/main/java/androidtutorials/helloworld/fullscreen/HelloWorldActivity.java"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view being showed in fullscreen mode
@@ -66,8 +69,8 @@
 
     <application name="HelloWorld (portrait)">
       <files base="android/helloworld/portrait">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/portrait/HelloWorldActivity.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/portrait/HelloWorldActivity.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view being showed. The orientation is
@@ -77,8 +80,8 @@
 
     <application name="HelloWorld (landscape)">
       <files base="android/helloworld/landscape">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/landscape/HelloWorldActivity.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/landscape/HelloWorldActivity.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
     <text>Simple HelloWorld application for Android. Implementation using a simple
     layout resource to declare the content view being showed. The orientation is
@@ -88,10 +91,10 @@
 
     <application name="HelloWorld (i18n)">
       <files base="android/helloworld/i18n">
-        <file name="src/org/xmlvm/tutorial/android/helloworld/i18n/HelloWorldActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="res/values/strings.xml"/>
-        <file name="res/values-de/strings.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/i18n/HelloWorldActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/values/strings.xml"/>
+        <file name="app/src/main/res/values-de/strings.xml"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view being showed. Application name
@@ -102,9 +105,9 @@
 
 	<application name="Layout (linear)">
       <files base="android/layout/linear">
-        <file name="src/org/xmlvm/tutorial/android/layout/linear/LayoutActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="res/layout-land/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/layout/linear/LayoutActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/layout-land/main.xml"/>
       </files>
       <text>A simple Android application demonstrating layout capabilities using
 	  a LinearLayout.</text>
@@ -113,8 +116,8 @@
 
 	<application name="Layout (relative)">
       <files base="android/layout/relative">
-        <file name="src/org/xmlvm/tutorial/android/layout/relative/LayoutActivity.java"/>
-        <file name="res/layout/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/layout/relative/LayoutActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
       </files>
       <text>A simple Android application demonstrating layout capabilities using
 	  a RelativeLayout.</text>
@@ -123,7 +126,7 @@
 
 	<application name="SayHello (prog)">
       <files base="android/sayhello/prog">
-        <file name="src/org/xmlvm/tutorial/android/sayhello/prog/SayHelloActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/sayhello/prog/SayHelloActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating simple event handling with
 	a button as well as accessing UI widgets. The application is implemented
@@ -133,8 +136,8 @@
 
 	<application name="SayHello (decl)">
       <files base="android/sayhello/decl">
-        <file name="src/org/xmlvm/tutorial/android/sayhello/decl/SayHelloActivity.java"/>
-        <file name="res/layout/main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/sayhello/decl/SayHelloActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
       </files>
 	<text>A simple Android application demonstrating simple event handling with
 	a button as well as accessing UI widgets. The application is implemented
@@ -146,9 +149,9 @@
 
 	<application name="Widgets">
       <files base="android/widgets">
-        <file name="src/org/xmlvm/tutorial/android/widgets/WidgetActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="res/values/strings.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/widgets/WidgetActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/values/strings.xml"/>
       </files>
 	<text>Application to demonstrate the User Interface widgets in Android</text>
 	<xmlvm-status>Not working</xmlvm-status>
@@ -156,7 +159,7 @@
 	
 	<application name="Alerts">
       <files base="android/alerts">
-        <file name="src/org/xmlvm/tutorial/android/alert/AlertActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/alert/AlertActivity.java"/>
       </files>
 	<text>Shows the use of toasts and alert dialogs</text>
 	<xmlvm-status>Not working</xmlvm-status>
@@ -164,7 +167,7 @@
 	
 	<application name="MultiTouch">
       <files base="android/touch">
-        <file name="src/org/xmlvm/tutorial/android/touch/MultiTouchActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/touch/MultiTouchActivity.java"/>
       </files>
 	<text>A simple multi-touch example. Fingers placed on the screen
     are tracked while being moved.</text>
@@ -173,7 +176,7 @@
 
 	<application name="Drawing">
       <files base="android/drawing">
-        <file name="src/org/xmlvm/tutorial/android/drawing/DrawingActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/drawing/DrawingActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating drawing capabilities using
 	the Canvas and Paint classes.
@@ -183,9 +186,9 @@
 
 	<application name="Activities (explicit)">
       <files base="android/activity/explicit/activityswitchexp">
-        <file name="src/org/xmlvm/tutorial/android/activity/explicit/BlueActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/explicit/YellowActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/explicit/LoggingActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/explicit/BlueActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/explicit/YellowActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/explicit/LoggingActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating the explicit switching between activities
 	with the called activity providing a result to the calling activity. Additionally
@@ -197,12 +200,12 @@
 
   <application name="Activities (implicit)">
       <files base="android/activity/implicit">
-        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/BlueActivity.java"/>
-        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/RedActivity.java"/>
-        <file name="activityswitchimplicit/src/org/xmlvm/tutorial/android/activity/implicit/YellowActivity.java"/>
-        <file name="activityswitchimplicit/AndroidManifest.xml"/>
-        <file name="activityswitchimplicitgreen/src/org/xmlvm/tutorial/android/activity/implicit/green/GreenActivity.java"/>
-        <file name="activityswitchimplicitgreen/AndroidManifest.xml"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/BlueActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/android/activity/implicit/RedActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/YellowActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/AndroidManifest.xml"/>
+        <file name="activityswitchimplicitgreen/app/src/main/java/org/androidtutorials/activity/implicit/green/GreenActivity.java"/>
+        <file name="activityswitchimplicitgreen/app/src/main/AndroidManifest.xml"/>
       </files>
       <text>Two Android applications demonstrating the implicit launching of activities. There are three activities
       that respond to the same action (Yellow, Red, and Green) prompting Android to show an activity chooser.
@@ -212,14 +215,14 @@
 
   <application name="Fragments">
       <files base="android/activity/fragment">
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/MainActivity.java"/>
-        <file name="res/layout/activity_main.xml"/>
-        <file name="res/layout-land/activity_main.xml"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/FruitListFragment.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/DetailFragment.java"/>
-        <file name="src/org/xmlvm/tutorial/android/activity/fragment/DetailActivity.java"/>
-        <file name="res/layout/activity_detail.xml"/>
-        <file name="res/layout/fragment_detail.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/MainActivity.java"/>
+        <file name="app/src/main/res/layout/activity_main.xml"/>
+        <file name="app/src/main/res/layout-land/activity_main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/FruitListFragment.java"/>
+        <file name="app/src/main/org/java/androidtutorials/activity/fragment/DetailFragment.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/DetailActivity.java"/>
+        <file name="app/src/main/res/layout/activity_detail.xml"/>
+        <file name="app/src/main/res/layout/fragment_detail.xml"/>
       </files>
   <text>Two fragments that are shown side-by-side in landscape mode and in
     two separate activities in portrait mode.
@@ -229,7 +232,7 @@
 
 	<application name="Handler">
       <files base="android/handler">
-        <file name="src/org/xmlvm/tutorial/android/handler/FibonacciActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/handler/FibonacciActivity.java"/>
       </files>
 	<text>Shows the use of a Handler to post messages to the UI thread.
 	</text>
@@ -238,8 +241,8 @@
 
   <application name="AsyncTask">
       <files base="android/asynctask">
-        <file name="src/org/xmlvm/tutorial/android/asynctask/MainActivity.java"/>
-        <file name="res/layout/activity_main.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/asynctask/MainActivity.java"/>
+        <file name="app/src/main/res/layout/activity_main.xml"/>
       </files>
   <text>Shows usage of AsyncTask to simplify background processing.
   </text>
@@ -248,7 +251,7 @@
 
   <application name="Notification">
       <files base="android/notification">
-        <file name="src/org/xmlvm/tutorial/android/notification/MainActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/notification/MainActivity.java"/>
       </files>
   <text>Shows usage of normal view notification.
   </text>
@@ -257,9 +260,9 @@
 
 	<application name="Service (started)">
       <files base="android/service/started">
-        <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/service/started/FibonacciService.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/service/started/FibonacciActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/service/started/FibonacciService.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>Demonstrates the use of a started service.
 	</text>
@@ -268,10 +271,10 @@
 
 	<application name="Service (bound)">
       <files base="android/service/bound">
-        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciResultListener.java"/>
-        <file name="src/org/xmlvm/tutorial/android/service/bound/FibonacciService.java"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciResultListener.java"/>
+        <file name="app/src/main/java/org/androidtutorials//service/bound/FibonacciService.java"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>Demonstrates the use of a bound service.
 	</text>
@@ -280,8 +283,8 @@
 
 	<application name="Menu">
       <files base="android/navigation/menu">
-        <file name="src/org/xmlvm/tutorial/android/menu/MenuActivity.java"/>
-        <file name="res/menu/options.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/menu/MenuActivity.java"/>
+        <file name="app/src/main/res/menu/options.xml"/>
       </files>
 	<text>A simple Android application demonstrating creating and handling option
 	menus.</text>
@@ -290,8 +293,8 @@
 
 	<application name="TabBar">
       <files base="android/navigation/tabbar">
-        <file name="src/org/xmlvm/tutorial/android/navigation/tabbar/TabBarActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/navigation/tabbar/DisplayActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/navigation/tabbar/TabBarActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/navigation/tabbar/DisplayActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating creating and handling TabBars
 	to navigate through the application.</text>
@@ -300,8 +303,8 @@
 
 	<application name="List">
       <files base="android/navigation/list">
-        <file name="src/org/xmlvm/tutorial/android/navigation/list/FruitListActivity.java"/>
-        <file name="res/layout/list_item.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/navigation/list/FruitListActivity.java"/>
+        <file name="app/src/main/res/layout/list_item.xml"/>
       </files>
 	<text>A simple Android application demonstrating using ListActivities and
 	ArrayAdapters.</text>
@@ -310,9 +313,9 @@
 
 	<application name="Settings">
       <files base="android/settings">
-        <file name="src/org/xmlvm/tutorial/android/settings/MainActivity.java"/>
-        <file name="src/org/xmlvm/tutorial/android/settings/SettingsActivity.java"/>
-        <file name="res/xml/settings.xml"/>
+        <file name="app/src/main/java/org/androidtutorials/settings/MainActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/settings/SettingsActivity.java"/>
+        <file name="app/src/main/res/xml/settings.xml"/>
       </files>
 	<text>Using settings under Android.</text>
 	<xmlvm-status>Not working</xmlvm-status>
@@ -320,9 +323,9 @@
 
 	<application name="Map">
       <files base="android/map">
-        <file name="src/org/xmlvm/tutorial/android/map/MapActivity.java"/>
-        <file name="res/layout/main.xml"/>
-        <file name="AndroidManifest.xml"/>
+        <file name="app/src/main/java/org/android/map/MapActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>A simple Android application demonstrating using MapActivity from the Google Android API.</text>
 	<xmlvm-status>Not working</xmlvm-status>
@@ -330,7 +333,7 @@
 
 	<application name="Accelerometer">
       <files base="android/sensor/accelerometer">
-        <file name="src/org/xmlvm/tutorial/android/sensor/accelerometer/AccelerometerActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/sensor/accelerometer/AccelerometerActivity.java"/>
       </files>
 	<text>A simple Android application demonstrating how to get the accelerometer
 	sensor readings.</text>
@@ -339,7 +342,7 @@
 	
 	<application name="Gyroscope">
       <files base="android/sensor/gyroscope">
-        <file name="src/org/xmlvm/tutorial/android/sensor/gyroscope/GyroActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/sensor/gyroscope/GyroActivity.java"></file>
       </files>
       <text>Simple Android aplication to demonstrate use of Gyroscope sensor in Android.</text>
       <xmlvm-status>Not working</xmlvm-status>
@@ -347,7 +350,7 @@
 
 	<application name="GPS">
       <files base="android/sensor/gps">
-        <file name="src/org/xmlvm/tutorial/android/sensor/gps/GPSActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/sensor/gps/GPSActivity.java"/>
       </files>
 	<text>A simple Android application displaying the current longitude and latitude.</text>
 	<xmlvm-status>Not working</xmlvm-status>
@@ -355,7 +358,7 @@
 	
 	<application name="Camera">
       <files base="android/sensor/camera">
-        <file name="src/org/xmlvm/tutorial/android/sensor/camera/CameraActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/sensor/camera/CameraActivity.java"></file>
       </files>
       <text>Simple Android aplication to demonstrate use of camera in Android.</text>
       <xmlvm-status>Not working</xmlvm-status>
@@ -363,8 +366,8 @@
 	
 	<application name="NFC Reader">
       <files base="android/sensor/nfcreader">
-        <file name="src/org/xmlvm/tutorial/android/sensor/nfcreader/NfcTagReader.java"></file>
-        <file name="AndroidManifest.xml"></file>
+        <file name="app/src/main/java/org/androidtutorials/sensor/nfcreader/NfcTagReader.java"></file>
+        <file name="app/src/main/AndroidManifest.xml"></file>
       </files>
       <text>Read NDEF-formatted NFC tags.</text>
       <xmlvm-status>Not working</xmlvm-status>
@@ -372,7 +375,7 @@
 	
     <application name="Sound">
       <files base="android/sound">
-        <file name="src/org/xmlvm/tutorial/android/sound/SoundActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/sound/SoundActivity.java"></file>
       </files>
       <text>Simple Android aplication to demonstrate use of MediaPlayer for audio playback.</text>
       <xmlvm-status>Working. Objc backend not working due to missing reflection 
@@ -381,10 +384,10 @@
     
   <application name="Animation">
       <files base="android/animation">
-        <file name="src/org/xmlvm/tutorial/android/animation/MainActivity.java"></file>
-        <file name="src/org/xmlvm/tutorial/android/animation/MyImageView.java"></file>
-        <file name="res/layout/activity_main.xml"></file>
-        <file name="res/animator/bounce.xml"></file>
+        <file name="app/src/main/java/org/androidtutorials/animation/MainActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/animation/MyImageView.java"></file>
+        <file name="app/src/main/res/layout/activity_main.xml"></file>
+        <file name="app/src/main/res/animator/bounce.xml"></file>
       </files>
       <text>Uses property animation to bounce a ball across the screen.</text>
       <xmlvm-status>Not working</xmlvm-status>
@@ -392,9 +395,9 @@
 
   <application name="Storage">
       <files base="android/storage">
-        <file name="src/org/xmlvm/tutorial/android/storage/MainActivity.java"></file>
-        <file name="src/org/xmlvm/tutorial/android/storage/sql/DatabaseHandler.java"></file>
-        <file name="src/org/xmlvm/tutorial/android/storage/sql/Employee.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/storage/MainActivity.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/storage/sql/DatabaseHandler.java"></file>
+        <file name="app/src/main/java/org/androidtutorials/storage/sql/Employee.java"></file>
       </files>
       <text>Show various ways of making data persistent.</text>
       <xmlvm-status>Not working</xmlvm-status>

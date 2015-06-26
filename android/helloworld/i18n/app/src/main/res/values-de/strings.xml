@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- 
+This version of strings.xml will be consulted whenever the device is set to
+a German locale. If the requested string is not found Android falls back to
+non-localized string.xml.
+-->
+<resources>
+    <string name="app_name">HalloWelt (i18n)</string>
+    <string name="greeting">Hallo Welt!</string>
+</resources>

@@ -1,28 +1,19 @@
-apply plugin: 'android'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    //TODO replace this with Maven dependency when ready
-    compile fileTree(dir: 'libs', include: '*.jar')
-}
-
-android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-
-    defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+buildscript {
+    repositories {
+        jcenter()
     }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
 
-    sourceSets {
-        main {
-            manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = ['src']
-            res.srcDirs = ['res']
-        }
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
     }
 }

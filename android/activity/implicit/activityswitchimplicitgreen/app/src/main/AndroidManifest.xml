@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This Android application has only one activity: GreenActivity. This activity
+has an intent filter with an explicit action. Note that the string given in
+android:name corresponds to ACTION_COLOR declared in BlueActivity of the other
+Android application. Also note that apart from using the same intent filter,
+there is no reference or dependence of this Android application to
+ActivitySwitchImplicit.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidtutorials.activity.implicit.green"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="org.androidtutorials.activity.implicit.green.GreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter android:label="Green Activity" >
+                <action android:name="org.androidtutorials.intent.action.ACTION_COLOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

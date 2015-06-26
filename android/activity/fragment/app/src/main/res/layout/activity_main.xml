@@ -1,0 +1,19 @@
+
+
+<!-- This layout is used by MainActivity when the device is in portrait mode.
+     In this case only the FruitListFragment is referenced as its UI. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The fragment-tag references a fragment by the fully qualified name
+         of the Java class implementing the fragment. -->
+    <fragment
+        android:id="@+id/fruit_list"
+        android:name="org.androidtutorials.activity.fragment.FruitListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

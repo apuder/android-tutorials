@@ -1,0 +1,35 @@
+
+
+<!-- This is the main UI of the application. It shows a common scenario where two
+     different views are super-imposed (in this example a ProgressBar and an ImageView),
+     but only one of those two views is visible while the other is 'gone' (meaning, it
+     is not part of the view hierarchy). Initially the ProgressBar is visible and
+     the ImageView is gone. When the AsyncTask completes, its onPostExecute()
+     method will make the ProgressBar gone and the ImageView visible. This is
+     a common technique used to give the user visual feedback for longer running
+     operations. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.androidtutorials.asynctask.MainActivity" >
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.ProgressBar.Large" />
+    
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
