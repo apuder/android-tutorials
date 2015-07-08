@@ -48,7 +48,7 @@
         <file name="app/src/main/java/org/androidtutorials/helloworld/decl/HelloWorldActivity.java"/>
 	<!-- Below is the path of the generated R.java File. But note that it will not be stroed in repo
          * since the app/build durectory is in the .gitignore file 
-	--!>
+	-->
         <file name="app/build/generated/source/r/debug/org/androidtutorials/helloworld/decl/app/build/generated/source/r/debug/org/androidtutorials/helloworld/decl/R.java"/>
         <file name="app/src/main/res/layout/main.xml"/>
       </files>
@@ -59,7 +59,7 @@
 
     <application name="HelloWorld (fullscreen)">
       <files base="android/helloworld/fullscreen">
-        <file name="app/src/main/java/androidtutorials/helloworld/fullscreen/HelloWorldActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/helloworld/fullscreen/HelloWorldActivity.java"/>
       </files>
       <text>Simple HelloWorld application for Android. Implementation using a simple
       layout resource to declare the content view being showed in fullscreen mode
@@ -201,7 +201,7 @@
   <application name="Activities (implicit)">
       <files base="android/activity/implicit">
         <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/BlueActivity.java"/>
-        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/android/activity/implicit/RedActivity.java"/>
+        <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/RedActivity.java"/>
         <file name="activityswitchimplicit/app/src/main/java/org/androidtutorials/activity/implicit/YellowActivity.java"/>
         <file name="activityswitchimplicit/app/src/main/AndroidManifest.xml"/>
         <file name="activityswitchimplicitgreen/app/src/main/java/org/androidtutorials/activity/implicit/green/GreenActivity.java"/>
@@ -219,7 +219,7 @@
         <file name="app/src/main/res/layout/activity_main.xml"/>
         <file name="app/src/main/res/layout-land/activity_main.xml"/>
         <file name="app/src/main/java/org/androidtutorials/activity/fragment/FruitListFragment.java"/>
-        <file name="app/src/main/org/java/androidtutorials/activity/fragment/DetailFragment.java"/>
+        <file name="app/src/main/java/org/androidtutorials/activity/fragment/DetailFragment.java"/>
         <file name="app/src/main/java/org/androidtutorials/activity/fragment/DetailActivity.java"/>
         <file name="app/src/main/res/layout/activity_detail.xml"/>
         <file name="app/src/main/res/layout/fragment_detail.xml"/>
@@ -273,7 +273,7 @@
       <files base="android/service/bound">
         <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciActivity.java"/>
         <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciResultListener.java"/>
-        <file name="app/src/main/java/org/androidtutorials//service/bound/FibonacciService.java"/>
+        <file name="app/src/main/java/org/androidtutorials/service/bound/FibonacciService.java"/>
         <file name="app/src/main/AndroidManifest.xml"/>
       </files>
 	<text>Demonstrates the use of a bound service.
@@ -323,7 +323,7 @@
 
 	<application name="Map">
       <files base="android/map">
-        <file name="app/src/main/java/org/android/map/MapActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/map/MapActivity.java"/>
         <file name="app/src/main/res/layout/main.xml"/>
         <file name="app/src/main/AndroidManifest.xml"/>
       </files>
