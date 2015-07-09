@@ -1,5 +1,9 @@
-<project name="tutorial" default="gen-html" basedir=".">
+<project name="tutorial" default="gen-html" basedir=".">	
 	
+	<exec executable="python">
+		<arg line="xmlParse.py doc/overview.xml" />
+	</exec>
+
 	<target name="gen-html">
 	    <ant dir="tools/tutorial-web-generator"/>
 		<ant dir="doc"/>
