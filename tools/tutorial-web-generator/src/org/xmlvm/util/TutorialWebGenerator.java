@@ -45,8 +45,9 @@ import org.xmlvm.util.universalfile.UniversalFileCreator;
  * <p>
  * Example Usage: <code>
  * <i>application</i>
- * --overview=bar/overview.xml --template=bar/template.html
- * --output=destination/foo
+ *   --overview=bar/overview.xml
+ *   --template=bar/template.html
+ *   --output=destination/foo
  * </code>
  */
 public class TutorialWebGenerator {
@@ -157,8 +158,6 @@ public class TutorialWebGenerator {
     public static boolean shouldBuildApp(String fileName) {
         if (fileName == null) {
             return false;
-        } else if (fileName.length() < 1) {
-            return false;
         }
         return fileName.endsWith("/R.java");
     }
@@ -176,15 +175,15 @@ public class TutorialWebGenerator {
             p.waitFor();
             /**
              * Can be used for Debugging a failed execution. Make sure to choose
-             * correct output Stream. 
-             */
-             //BufferedReader readerErr = new BufferedReader(new InputStreamReader(p.getInputStream()));
-             //BufferedReader readerOut = new BufferedReader(new InputStreamReader(p.getInputStream()));
-             //StringBuffer output = new StringBuffer(); String line = "";
-             //while ((line = reader.readLine()) != null) {
-             //    output.append(line + "\n");
-             //}
-             //System.out.println(output.toString());
+             * correct output Stream.  
+             BufferedReader readerErr = new BufferedReader(new InputStreamReader(p.getInputStream()));
+             BufferedReader readerOut = new BufferedReader(new InputStreamReader(p.getInputStream()));
+             StringBuffer output = new StringBuffer(); String line = "";
+             while ((line = reader.readLine()) != null) {
+                 output.append(line + "\n");
+             }
+             System.out.println(output.toString());
+            */
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
             Log.error("buildTutorialApp", "Exec Failed " + ex.getMessage());
