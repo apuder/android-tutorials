@@ -19,18 +19,20 @@ package org.xmlvm.util;
  * USA.
  */
 
-
-
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.apache.commons.io.IOUtils;
 import org.jdom.Document;
@@ -46,21 +48,20 @@ import org.xmlvm.util.universalfile.UniversalFileCreator;
  * <p>
  * Example Usage: <code>
  * <i>application</i>
- *   --overview=bar/overview.xml
- *   --template=bar/template.html
- *   --output=destination/foo
+ * --overview=bar/overview.xml --template=bar/template.html
+ * --output=destination/foo
  * </code>
  */
 public class TutorialWebGenerator {
 
     private static class Params {
-        public final String         overviewPath;
-        public final String         outputPath;
-        public final String         templatePath;
-        private static final String PARAM_OVERVIEW_XML = "--overview=";
-        private static final String PARAM_OUTPUT       = "--output=";
-        private static final String PARAM_TEMPLATE     = "--template=";
 
+        public final String overviewPath;
+        public final String outputPath;
+        public final String templatePath;
+        private static final String PARAM_OVERVIEW_XML = "--overview=";
+        private static final String PARAM_OUTPUT = "--output=";
+        private static final String PARAM_TEMPLATE = "--template=";
 
         public Params(String overviewPath, String outputPath, String template) {
             this.overviewPath = overviewPath;
@@ -87,9 +88,7 @@ public class TutorialWebGenerator {
         }
     }
 
-
     private static final String OUTPUT_FILENAME = "index.html";
-
 
     public static void main(String[] args) {
         Params params = Params.parse(args);
@@ -153,6 +152,47 @@ public class TutorialWebGenerator {
     }
 
     /**
+     * Determines whether an Android Tutorial should be built. Will return false
+     * if parameter is null.
+     *
+     * @param fileName path the source code file
+     * @return True - Should build App. False - Should not build App.
+     */
+    public static boolean shouldBuildApp(String fileName) {
+        if (fileName == null) {
+            return false;
+        }
+        if (fileName.length() < 1) {
+            return false;
+        }
+        return fileName.endsWith("/R.java");
+    }
+
+    public static void buildTutorialApp(File file,String appTitle) {
+        String appRoot = file.getAbsolutePath().substring(0, file.getAbsolutePath().indexOf("/app"));        
+        try {
+            Process p = Runtime.getRuntime().exec(appRoot+"/./gradlew assembleDebug -q -p "+appRoot);
+            System.out.println("Building " + appTitle + "....");
+            p.waitFor();
+            /** Can be used for Debugging a failed execution.
+             * Make to Chose correct output Stream.
+            BufferedReader readerErr = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            BufferedReader readerOut = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            StringBuffer output = new StringBuffer();
+            String line = "";
+            while ((line = reader.readLine()) != null) {
+                output.append(line + "\n");
+            }
+            System.out.println(output.toString());
+            */
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        } catch (InterruptedException ex) {
+             System.out.println(ex.getMessage());
+        }
+    }
+
+    /**
      * Returns HTML/JS that needs to be included in the page somewhere.
      */
     private static String generateCodeFiles(String platform, Element application, String outputPath) {
@@ -179,6 +219,11 @@ public class TutorialWebGenerator {
         for (Element fileElement : fileElements) {
             String name = fileElement.getAttributeValue("name");
             File file = new File(basePath + "/" + name);
+            /* Determines if App needs to be Built -AJS 7/10/2015*/
+            if (shouldBuildApp(file.getPath())) {
+                /* Build Android Tutorial for R.java File -AJS 7/10/2015*/
+                buildTutorialApp(file,title);
+            }
             if (file.exists() && file.isFile()) {
                 String fileName = id + "-" + name.replace('/', '-') + ".html";
                 String pathName = output.getAbsolutePath() + "/" + fileName;
