@@ -19,8 +19,6 @@ package org.xmlvm.util;
  * USA.
  */
 
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -37,6 +35,7 @@ import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
+import org.xmlvm.Log;
 import org.xmlvm.util.universalfile.UniversalFile;
 import org.xmlvm.util.universalfile.UniversalFileCreator;
 
@@ -54,13 +53,13 @@ import org.xmlvm.util.universalfile.UniversalFileCreator;
 public class TutorialWebGenerator {
 
     private static class Params {
-        public final String         overviewPath;
-        public final String         outputPath;
-        public final String         templatePath;
-        private static final String PARAM_OVERVIEW_XML = "--overview=";
-        private static final String PARAM_OUTPUT       = "--output=";
-        private static final String PARAM_TEMPLATE     = "--template=";
 
+        public final String overviewPath;
+        public final String outputPath;
+        public final String templatePath;
+        private static final String PARAM_OVERVIEW_XML = "--overview=";
+        private static final String PARAM_OUTPUT = "--output=";
+        private static final String PARAM_TEMPLATE = "--template=";
 
         public Params(String overviewPath, String outputPath, String template) {
             this.overviewPath = overviewPath;
@@ -87,9 +86,7 @@ public class TutorialWebGenerator {
         }
     }
 
-
     private static final String OUTPUT_FILENAME = "index.html";
-
 
     public static void main(String[] args) {
         Params params = Params.parse(args);
@@ -153,6 +150,49 @@ public class TutorialWebGenerator {
     }
 
     /**
+     * Determines whether an Android Tutorial should be built. Will return false
+     * if parameter is null.
+     * @param fileName path of the source code file
+     * @return True - Should build App. False - Should not build App.
+     */
+    public static boolean shouldBuildApp(String fileName) {
+        if (fileName == null) {
+            return false;
+        }
+        return fileName.endsWith("/R.java");
+    }
+    /**
+     * Builds Tutorial Application, will wait for build process
+     * to finish before moving on.
+     * @param file file object 
+     * @param appTitle title of current Tutorial Application
+     */
+    public static void buildTutorialApp(File file, String appTitle) {
+        String appRoot = file.getAbsolutePath().substring(0, file.getAbsolutePath().indexOf("/app"));
+        try {
+            Process p = Runtime.getRuntime().exec(appRoot + "/./gradlew assembleDebug -q -p " + appRoot);
+            System.out.println("Building " + appTitle + "....");
+            p.waitFor();
+            /**
+             * Can be used for Debugging a failed execution. Make sure to choose
+             * correct output Stream.  
+             BufferedReader readerErr = new BufferedReader(new InputStreamReader(p.getInputStream()));
+             BufferedReader readerOut = new BufferedReader(new InputStreamReader(p.getInputStream()));
+             StringBuffer output = new StringBuffer(); String line = "";
+             while ((line = reader.readLine()) != null) {
+                 output.append(line + "\n");
+             }
+             System.out.println(output.toString());
+            */
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+            Log.error("buildTutorialApp", "Exec Failed " + ex.getMessage());
+        } catch (InterruptedException ex) {
+            Log.error("buildTutorialApp", "Process Wait Failed " + ex.getMessage());
+        }
+    }
+
+    /**
      * Returns HTML/JS that needs to be included in the page somewhere.
      */
     private static String generateCodeFiles(String platform, Element application, String outputPath) {
@@ -179,6 +219,11 @@ public class TutorialWebGenerator {
         for (Element fileElement : fileElements) {
             String name = fileElement.getAttributeValue("name");
             File file = new File(basePath + "/" + name);
+            /* Determines if App needs to be Built -AJS 7/10/2015*/
+            if (shouldBuildApp(file.getPath())) {
+                /* Build Android Tutorial for R.java File -AJS 7/10/2015*/
+                buildTutorialApp(file, title);
+            }
             if (file.exists() && file.isFile()) {
                 String fileName = id + "-" + name.replace('/', '-') + ".html";
                 String pathName = output.getAbsolutePath() + "/" + fileName;
