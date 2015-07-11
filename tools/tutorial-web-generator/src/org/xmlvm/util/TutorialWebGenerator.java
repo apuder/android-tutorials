@@ -152,7 +152,7 @@ public class TutorialWebGenerator {
     /**
      * Determines whether an Android Tutorial should be built. Will return false
      * if parameter is null.
-     * @param fileName path the source code file
+     * @param fileName path of the source code file
      * @return True - Should build App. False - Should not build App.
      */
     public static boolean shouldBuildApp(String fileName) {
