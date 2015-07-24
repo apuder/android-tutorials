@@ -57,16 +57,6 @@
       <xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
     </application>
 
-    <application name="HelloWorld (fullscreen)">
-      <files base="android/helloworld/fullscreen">
-        <file name="app/src/main/java/org/androidtutorials/helloworld/fullscreen/HelloWorldActivity.java"/>
-      </files>
-      <text>Simple HelloWorld application for Android. Implementation using a simple
-      layout resource to declare the content view being showed in fullscreen mode
-      without title bar.</text>
-      <xmlvm-status>Partially working. Title bar not hidden.</xmlvm-status>
-    </application>
-
     <application name="HelloWorld (portrait)">
       <files base="android/helloworld/portrait">
         <file name="app/src/main/java/org/androidtutorials/helloworld/portrait/HelloWorldActivity.java"/>
@@ -401,6 +391,15 @@
       </files>
       <text>Show various ways of making data persistent.</text>
       <xmlvm-status>Not working</xmlvm-status>
+    </application>
+
+    <application name="Immersive">
+      <files base="android/immersive">
+        <file name="app/src/main/java/org/androidtutorials/immersive/ImmersiveActivity.java"/>
+      </files>
+      <text>Demonstrates immersive mode where an application can take over
+      the whole screen.</text>
+      <xmlvm-status>Partially working. Title bar not hidden.</xmlvm-status>
     </application>
 
   </tutorials>
