@@ -252,6 +252,7 @@ public class TutorialWebGenerator {
             } else {
                 System.err.println("File does not exist or is not a file: "
                         + file.getAbsolutePath());
+                System.exit(-1);
             }
         }
         htmlJs.append("{}];\n");
