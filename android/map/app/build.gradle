@@ -5,8 +5,8 @@ android {
 
     defaultConfig {
         applicationId "org.androidtutorials.map"
-        minSdkVersion 19
-        targetSdkVersion 19
+        minSdkVersion 21
+        targetSdkVersion 21
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_5
             targetCompatibility JavaVersion.VERSION_1_5
