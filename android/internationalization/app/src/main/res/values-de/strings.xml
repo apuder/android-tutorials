@@ -7,6 +7,6 @@ a German locale. If the requested string is not found Android falls back to
 non-localized string.xml.
 -->
 <resources>
-    <string name="app_name">HalloWelt (i18n)</string>
+    <string name="app_name">Internationalisierung</string>
     <string name="greeting">Hallo Welt!</string>
 </resources>

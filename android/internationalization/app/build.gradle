@@ -5,13 +5,9 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "org.androidtutorials.helloworld.i18n"
+        applicationId "org.androidtutorials.i18n"
         minSdkVersion 21
         targetSdkVersion 21
-        compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_5
-            targetCompatibility JavaVersion.VERSION_1_5
-        }
     }
 
     buildTypes {

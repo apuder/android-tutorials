@@ -57,20 +57,6 @@
       <xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
     </application>
 
-    <application name="HelloWorld (i18n)">
-      <files base="android/helloworld/i18n">
-        <file name="app/src/main/java/org/androidtutorials/helloworld/i18n/HelloWorldActivity.java"/>
-        <file name="app/src/main/res/layout/main.xml"/>
-        <file name="app/src/main/res/values/strings.xml"/>
-        <file name="app/src/main/res/values-de/strings.xml"/>
-      </files>
-      <text>Simple HelloWorld application for Android. Implementation using a simple
-      layout resource to declare the content view being showed. Application name
-      and the greeting text are defined by String resources to support internationalization
-      </text>
-      <xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
-    </application>
-
 	<application name="Layout (linear)">
       <files base="android/layout/linear">
         <file name="app/src/main/java/org/androidtutorials/layout/linear/LayoutActivity.java"/>
@@ -378,6 +364,20 @@
       <text>Demonstrates immersive mode where an application can take over
       the whole screen.</text>
       <xmlvm-status>Partially working. Title bar not hidden.</xmlvm-status>
+    </application>
+
+    <application name="Internationalization">
+      <files base="android/internationalization">
+        <file name="app/src/main/java/org/androidtutorials/i18n/HelloWorldActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+        <file name="app/src/main/res/values/strings.xml"/>
+        <file name="app/src/main/res/values-de/strings.xml"/>
+      </files>
+      <text>Simple HelloWorld application for Android. Implementation using a simple
+      layout resource to declare the content view being showed. Application name
+      and the greeting text are defined by String resources to support internationalization.
+      </text>
+      <xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
     </application>
 
   </tutorials>

@@ -1,10 +1,8 @@
 
-package org.androidtutorials.helloworld.i18n;
+package org.androidtutorials.i18n;
 
 import android.app.Activity;
 import android.os.Bundle;
-
-import org.androidtutorials.helloworld.i18n.R;
 
 /**
  * This variation of Hello World is localized for different languages (for now
