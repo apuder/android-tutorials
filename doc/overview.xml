@@ -57,28 +57,6 @@
       <xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
     </application>
 
-    <application name="HelloWorld (portrait)">
-      <files base="android/helloworld/portrait">
-        <file name="app/src/main/java/org/androidtutorials/helloworld/portrait/HelloWorldActivity.java"/>
-        <file name="app/src/main/AndroidManifest.xml"/>
-      </files>
-      <text>Simple HelloWorld application for Android. Implementation using a simple
-      layout resource to declare the content view being showed. The orientation is
-      locked to portrait mode.</text>
-      <xmlvm-status>Working</xmlvm-status>
-    </application>
-
-    <application name="HelloWorld (landscape)">
-      <files base="android/helloworld/landscape">
-        <file name="app/src/main/java/org/androidtutorials/helloworld/landscape/HelloWorldActivity.java"/>
-        <file name="app/src/main/AndroidManifest.xml"/>
-      </files>
-    <text>Simple HelloWorld application for Android. Implementation using a simple
-    layout resource to declare the content view being showed. The orientation is
-    locked to landscape mode.</text>
-    <xmlvm-status>Working</xmlvm-status>
-    </application>
-
     <application name="HelloWorld (i18n)">
       <files base="android/helloworld/i18n">
         <file name="app/src/main/java/org/androidtutorials/helloworld/i18n/HelloWorldActivity.java"/>
