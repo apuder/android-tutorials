@@ -172,7 +172,12 @@ public class TutorialWebGenerator {
         try {
             Process p = Runtime.getRuntime().exec(appRoot + "/./gradlew assembleDebug -q -p " + appRoot);
             System.out.println("Building " + appTitle + "....");
-            p.waitFor();
+            int exit = p.waitFor();
+            if (exit != 0) {
+                System.err.println("Couldn't not build " + appTitle);
+                System.err.println("Ensure ANDROID_HOME points to the Android SDK base directory.");
+                System.exit(-1);
+            }
             /**
              * Can be used for Debugging a failed execution. Make sure to choose
              * correct output Stream.  

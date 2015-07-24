@@ -2,13 +2,13 @@
 	
 	<target name="gen-html">
 	    <ant dir="tools/tutorial-web-generator"/>
-		<ant dir="doc"/>
+	    <ant dir="doc"/>
 	</target>
 
 	<target name="clean">
 	    <delete dir="dist" failonerror="false"/>
 	    <ant dir="tools/tutorial-web-generator" target="clean"/>
-		<ant dir="doc" target="clean"/>
+	    <ant dir="doc" target="clean"/>
 	</target>
 
 </project>

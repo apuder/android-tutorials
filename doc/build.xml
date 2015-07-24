@@ -30,7 +30,7 @@
 	<target name="gen-html">
 		<echo message="Generating tutorial HTML" />
 		<delete dir="${html-output}" failonerror="false" />
-		<java classname="org.xmlvm.util.TutorialWebGenerator">
+		<java classname="org.xmlvm.util.TutorialWebGenerator" failonerror="true">
 			<arg value="--overview=doc/overview.xml" />
 			<arg value="--output=${html-output}" />
 			<arg value="--template=doc/template.html" />
