@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 8
+    compileSdkVersion 21
     buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "org.androidtutorial.service.bound"
-        minSdkVersion 8
-        targetSdkVersion 8
+        minSdkVersion 21
+        targetSdkVersion 21
     }
 
     buildTypes {
