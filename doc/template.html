@@ -192,7 +192,7 @@
 	  <li><a href="#source-tab">Source Code</a></li>
 	</ul>
 	<div id="slide-tab">
-      <iframe id="slide" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
+      <iframe id="slide" frameborder="0" allowfullscreen webkitallowfullscreen src="viewer/viewer.html?file=/doc/slides.pdf"></iframe>
     </div>
 	<div id="source-tab">
 	  <div class="file-tabs">
@@ -244,7 +244,7 @@
 
   function switchToIntro() {
       $('.selectedEntry').removeClass('selectedEntry');
-      $('#slide').attr('src', 'ViewerJS#../doc/slides.pdf');
+      $('#slide').attr('src', '/viewer/viewer.html?file=/doc/slides.pdf');
 	  // The starting config contains a general XMLVM Intro, with no source.
 	  $('#tabs').tabs('disable', 1);
 	  $('#tutorialList').scrollTop(0);
@@ -254,7 +254,7 @@
 	$('.selectedEntry').removeClass('selectedEntry');
     $('#' + id).addClass('selectedEntry');
 
-    $('#slide').attr('src', 'ViewerJS#../slides/' + id + '-slides.pdf');
+    $('#slide').attr('src', '/viewer/viewer.html?file=/slides/' + id + '-slides.pdf');
 	$('#tabs').tabs('enable', 1);
 	$('#tabs').tabs('option', 'active', 0);
 
@@ -285,9 +285,9 @@
 		  $(this).addClass('tutorialEntryHover');
 	  });
   }
-  $("#tabs").tabs({
-    create: function( event, ui ) { switchToIntro(); }
-  });
+  document.getElementById('slide').onload = function() {
+    document.getElementById('slide').contentWindow.PDFJS.openExternalLinksInNewWindow = true;
+  };
 </script>
   </body>
 </html>
