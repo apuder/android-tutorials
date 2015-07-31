@@ -2,9 +2,9 @@
 
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="org.androidtutorials.layout.linear" android:versionCode="1"
+	package="org.androidtutorials.layout.linear"
+	android:versionCode="1"
 	android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="8" />
 
 	<application android:icon="@drawable/icon" android:label="Layout (linear)">
 		<activity android:name="org.androidtutorials.layout.linear.LayoutActivity" android:label="Layout (linear)">
