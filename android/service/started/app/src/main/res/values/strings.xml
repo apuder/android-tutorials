@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Service</string>
+    <string name="fib_to_compute">Fibonacci to compute</string>
+    <string name="n.a">n.a.</string>
+    <string name="compute">Compute</string>
 </resources>
