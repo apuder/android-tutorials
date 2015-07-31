@@ -35,7 +35,7 @@ public class FibonacciActivity extends Activity {
             lblResult.setText("fib(" + n + "): " + res);
         }
 
-    };
+    }
 
     private EditText      edtInput;
     private TextView      lblResult;
