@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import org.androidtutorials.activity.explicit.R;
 
 /**
  * YellowActivity will be called from BlueActivity. It maintains a counter how

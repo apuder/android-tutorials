@@ -4,4 +4,6 @@
 
 <resources>
     <string name="app_name">ActivitySwitch</string>
+    <string name="finish_yello">Finish yellow ...</string>
+    <string name="go_yello">Go yellow ... !</string>
 </resources>
