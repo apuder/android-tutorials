@@ -2,5 +2,9 @@
 <resources>
 
     <string name="app_name">Settings</string>
+    <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="iLikeAndroid">I like Android</string>
+    <string name="edit">Edit</string>
 
 </resources>
