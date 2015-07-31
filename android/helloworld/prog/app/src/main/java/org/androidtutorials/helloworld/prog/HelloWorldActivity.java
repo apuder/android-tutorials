@@ -64,7 +64,7 @@ public class HelloWorldActivity extends Activity {
          * layout parameters as defined in RelativeLayout (such as
          * RelativeLayout.ALIGN_PARENT_BOTTOM).
          */
-        params.addRule(RelativeLayout.CENTER_IN_PARENT);
+        params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
 
         /*
          * Add the label as a child to the RelativeLayout using the specific
