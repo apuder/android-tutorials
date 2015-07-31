@@ -15,22 +15,22 @@ http://developer.android.com/reference/android/widget/RelativeLayout.LayoutParam
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent">
 	<Button android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:minHeight="50px"
-		android:minWidth="125px" android:layout_margin="20px" android:text="1" />
+		android:layout_height="wrap_content" android:minHeight="50dp"
+		android:minWidth="125dp" android:layout_margin="20dp" android:text="@string/num_1" />
 	<Button android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:minHeight="50px"
-		android:minWidth="125px" android:layout_margin="20px"
-		android:layout_alignParentRight="true" android:text="2" />
+		android:layout_height="wrap_content" android:minHeight="50dp"
+		android:minWidth="125dp" android:layout_margin="20dp"
+		android:layout_alignParentEnd="true" android:text="@string/num_2" />
 	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:layout_margin="20px"
-		android:layout_centerInParent="true" android:text="3" />
+		android:layout_height="wrap_content" android:layout_margin="20dp"
+		android:layout_centerInParent="true" android:text="@string/num_3" />
 	<Button android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:minHeight="50px"
-		android:minWidth="125px" android:layout_margin="20px"
-		android:layout_alignParentBottom="true" android:text="4" />
+		android:layout_height="wrap_content" android:minHeight="50dp"
+		android:minWidth="125dp" android:layout_margin="20dp"
+		android:layout_alignParentBottom="true" android:text="@string/num_4" />
 	<Button android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:minHeight="50px"
-		android:minWidth="125px" android:layout_margin="20px"
-		android:layout_alignParentRight="true"
-		android:layout_alignParentBottom="true" android:text="5" />
+		android:layout_height="wrap_content" android:minHeight="50dp"
+		android:minWidth="125dp" android:layout_margin="20dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentBottom="true" android:text="@string/num_5" />
 </RelativeLayout>
