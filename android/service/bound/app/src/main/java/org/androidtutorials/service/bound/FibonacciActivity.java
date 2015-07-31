@@ -81,7 +81,7 @@ public class FibonacciActivity extends Activity implements FibonacciResultListen
             fibonacciService = null;
             bound = false;
         }
-    };
+    }
 
     private ServiceConnection connection = new FibonacciServiceConnection();
 

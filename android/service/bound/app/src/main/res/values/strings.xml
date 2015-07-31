@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, ServiceActivity!</string>
     <string name="app_name">BoundService</string>
+    <string name="fib_to_compute">Fibonacci to compute</string>
+    <string name="na">n.a.</string>
+    <string name="compute">Compute</string>
 
 </resources>
