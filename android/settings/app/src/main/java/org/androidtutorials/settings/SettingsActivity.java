@@ -3,7 +3,6 @@ package org.androidtutorials.settings;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-import org.androidtutorials.settings.R;
 
 /**
  * SettingsActivity is derived from PreferenceActivity and acts as an
@@ -18,7 +17,9 @@ public class SettingsActivity extends PreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.settings);
+        getFragmentManager().beginTransaction()
+                .replace(android.R.id.content, new PrefFragment())
+                .commit();
         setTitle("Settings...");
     }
 

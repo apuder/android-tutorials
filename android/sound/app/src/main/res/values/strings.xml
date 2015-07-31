@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, SoundActivity!</string>
     <string name="app_name">Sound</string>
+    <string name="loopsound">Loop sound</string>
 </resources>

@@ -5,5 +5,5 @@
 	android:background="#ff00ff00">
 	<Button android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:layout_centerInParent="true"
-		android:onClick="onClick" android:text="Finish green..." />
+		android:onClick="onClick" android:text="@string/finish_green" />
 </RelativeLayout>

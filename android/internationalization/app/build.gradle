@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "org.androidtutorials.i18n"
+        applicationId "org.androidtutorials.internationalization"
         minSdkVersion 21
         targetSdkVersion 21
     }

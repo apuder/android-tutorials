@@ -43,7 +43,7 @@ public class SayHelloActivity extends Activity {
          */
         final EditText editText = new EditText(this);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         params.leftMargin = params.rightMargin = params.topMargin = 50;
         params.bottomMargin = 25;
         params.gravity = Gravity.CENTER;

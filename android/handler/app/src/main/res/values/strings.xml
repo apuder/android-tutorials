@@ -2,5 +2,8 @@
 <resources>
 
     <string name="app_name">Handler</string>
+    <string name="fib_to_comp">Fibonacci to compute</string>
+    <string name="n.a">n.a.</string>
+    <string name="compute">Compute</string>
 
 </resources>

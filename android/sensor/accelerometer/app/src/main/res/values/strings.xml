@@ -2,4 +2,8 @@
 <resources>
     <string name="hello">Hello World, AccelerometerActivity!</string>
     <string name="app_name">Accelerometer</string>
+    <string name="x_axis">X axis:</string>
+    <string name="n.a">n.a.</string>
+    <string name="y_axis">Y axis:</string>
+    <string name="z_axis">Z axis:</string>
 </resources>

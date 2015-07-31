@@ -269,6 +269,7 @@
       <files base="android/settings">
         <file name="app/src/main/java/org/androidtutorials/settings/MainActivity.java"/>
         <file name="app/src/main/java/org/androidtutorials/settings/SettingsActivity.java"/>
+	<file name="app/src/main/java/org/androidtutorials/settings/PrefFragment.java"/>
         <file name="app/src/main/res/xml/settings.xml"/>
       </files>
 	<text>Using settings under Android.</text>

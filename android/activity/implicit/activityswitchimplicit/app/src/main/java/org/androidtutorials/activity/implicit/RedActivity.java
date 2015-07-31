@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import org.androidtutorials.activity.implicit.R;
 
 public class RedActivity extends LoggingActivity {
 

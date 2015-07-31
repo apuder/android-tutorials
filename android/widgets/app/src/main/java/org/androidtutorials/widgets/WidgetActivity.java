@@ -1,5 +1,3 @@
-
-
 package org.androidtutorials.widgets;
 
 import android.app.Activity;
@@ -11,8 +9,6 @@ import android.widget.DatePicker;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import org.androidtutorials.widgets.R;
 
 /**
  * 
@@ -65,7 +61,7 @@ public class WidgetActivity extends Activity {
         /*
          * The Spinner widget is obtained from the layout with findViewById().
          * Each item in the string array -color_array which is defined in
-         * res/values/strings.xml is bound with initial appearence for Spinner
+         * res/values/strings.xml is bound with initial appearance for Spinner
          * using createFromResource() android.R.layout.simple_spinner_item and
          * simple_spinner_dropdown_item are standard layouts defined by the
          * platform. ArrayAdapter is set to associate all of its items with the

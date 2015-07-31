@@ -3,7 +3,6 @@
 <!-- This layout is used by MainActivity when the device is in portrait mode.
      In this case only the FruitListFragment is referenced as its UI. -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >

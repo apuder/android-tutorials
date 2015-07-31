@@ -3,5 +3,7 @@
 
     <string name="hello">Hello World, AlertsActivity!</string>
     <string name="app_name">Alerts</string>
+    <string name="show_text">Show toast</string>
+    <string name="show_alert">Show alert</string>
 
 </resources>

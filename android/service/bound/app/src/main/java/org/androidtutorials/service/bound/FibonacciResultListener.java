@@ -7,5 +7,5 @@ package org.androidtutorials.service.bound;
  */
 public interface FibonacciResultListener {
 
-    public void resultAvailable(final int n, final int res);
+    void resultAvailable(final int n, final int res);
 }

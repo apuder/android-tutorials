@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
 <resources>
 	<string name="hello">Hello World, widgetActivity!</string>
 	<string name="app_name">Widget</string>
 	<string name="color_prompt">Choose a color</string>
+
 	<string-array name="color_array">
 		<item>Blue</item>
 		<item>Black</item>
@@ -15,4 +15,32 @@
 		<item>Yellow</item>
 		<item>Brown</item>
 	</string-array>
+
+    <!--
+     	String values for Widget Headers
+    -->
+
+	<string name="textview">TextView</string>
+	<string name="clickhere">Click here</string>
+	<string name="enter_name">Enter your name</string>
+	<string name="class_checkbox">Class: CheckBox</string>
+	<string name="checkBox">checkBox</string>
+	<string name="radio">Radio</string>
+	<string name="txt_button">Button</string>
+	<string name="class_buttontoast">Class: Button, Toast</string>
+	<string name="class_edittext">Class: EditText</string>
+	<string name="class_radioButton">Class: RadioButton</string>
+	<string name="class_textview">Class: TextView</string>
+	<string name="class_togglebutton">Class: ToggleButton</string>
+	<string name="class_ratingbar">Class: RatingBar</string>
+	<string name="class_analogclock">Class: AnalogClock</string>
+	<string name="class_digitalclock">Class: DigitalClock</string>
+	<string name="class_datepicker">Class: DatePicker</string>
+	<string name="class_timepicker">Class: TimePicker</string>
+	<string name="class_imagebutton">Class: ImageButton</string>
+	<string name="class_imageview">Class: ImageView</string>
+	<string name="class_progbar_horiz">Class: ProgressBar Style:Horizontal</string>
+	<string name="class_progbar_small">Class: ProgressBar Style:Small</string>
+	<string name="class_seekbar">Class: SeekBar</string>
+	<string name="class_spinner">Class: Spinner</string>
 </resources>

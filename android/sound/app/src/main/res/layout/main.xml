@@ -10,7 +10,7 @@
 	    android:layout_width="wrap_content" 
 	    android:layout_height="wrap_content"
 		android:layout_centerVertical="true"
-		android:layout_marginLeft="120px"
+		android:layout_marginStart="120dp"
 	    android:layout_gravity="center"
 	    />
 	
@@ -27,9 +27,9 @@
 		<TextView 
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginRight="10dip"
+		android:layout_marginEnd="10dip"
 		android:layout_gravity="center_vertical"
-		android:text="Loop sound"
+		android:text="@string/loopsound"
 		/>	    
 		
 		<CheckBox android:id="@+id/loop_sound_switch"
@@ -43,7 +43,7 @@
 		android:layout_height="wrap_content" 
 		android:layout_below="@id/loop_sound_layout"
 		android:layout_centerHorizontal="true"
-		android:layout_marginTop="20px"
+		android:layout_marginTop="20dp"
 		android:onClick="onClick"
 		/>	
 

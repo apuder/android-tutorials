@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.androidtutorials.activity.explicit.R;
-
 /**
  * This application demonstrates the Activty lifecycle. An application typically
  * consists of several Activities that can call each other. It is even possible

@@ -2,4 +2,9 @@
 <resources>
     <string name="hello">Hello World, GPSActivity!</string>
     <string name="app_name">GPS</string>
+    <string name="n.a">n.a.</string>
+    <string name="dash">-</string>
+    <string name="status">Status:</string>
+    <string name="lat">Latitude:</string>
+    <string name="longitude">Longitude:</string>
 </resources>

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Gyroscope</string>
+    <string name="n.a">n.a.</string>
+    <string name="x_axis">X axis:</string>
+    <string name="y_axis">Y axis:</string>
+    <string name="z_axis">Z axis:</string>
 </resources>

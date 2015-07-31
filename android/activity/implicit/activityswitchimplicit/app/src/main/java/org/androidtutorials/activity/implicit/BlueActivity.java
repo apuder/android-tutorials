@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.androidtutorials.activity.implicit.R;
 
 /**
  * This tutorial is a variation of the explicit activity switch demo. There are

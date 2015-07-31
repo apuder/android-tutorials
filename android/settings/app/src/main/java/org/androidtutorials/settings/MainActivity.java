@@ -8,7 +8,6 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.TextView;
 
-import org.androidtutorials.settings.R;
 
 /**
  * Settings are usually used to allow the user change the behavior of an app. In
