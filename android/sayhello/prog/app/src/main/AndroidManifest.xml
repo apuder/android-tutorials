@@ -3,9 +3,9 @@
 
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="org.androidtutorials.sayhello.prog" android:versionCode="1"
+	package="org.androidtutorials.sayhello.prog"
+	android:versionCode="1"
 	android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="8" />
 
 	<application android:icon="@drawable/icon" android:label="SayHello (prog)">
 		<activity android:name="org.androidtutorials.sayhello.prog.SayHelloActivity" android:label="SayHello (prog)">
