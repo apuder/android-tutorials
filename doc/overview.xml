@@ -381,6 +381,18 @@
       <xmlvm-status>Partially working. Rotation does not work.</xmlvm-status>
     </application>
 
+    <application name="Espresso UI Test">
+      <files base="android/uitest">
+        <file name="app/src/androidTest/java/org/androidtutorials/uitest/SayHelloActivityTest.java"/>
+        <file name="app/build.gradle"/>
+        <file name="app/src/main/java/org/androidtutorials/uitest/SayHelloActivity.java"/>
+        <file name="app/src/main/res/layout/main.xml"/>
+      </files>
+      <text>UI testing tutorial for SayHello declarative version using Espresso.
+      </text>
+      <xmlvm-status>Partially Working</xmlvm-status>
+    </application>
+
   </tutorials>
 
 </android-tutorials>
