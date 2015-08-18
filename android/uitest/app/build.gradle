@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "org.androidtutorials.sayhello.decl.uitest"
+        applicationId "org.androidtutorials.uitest"
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1

@@ -1,4 +1,4 @@
-package org.androidtutorials.sayhello.decl.uitest;
+package org.androidtutorials.uitest;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
@@ -14,12 +14,11 @@ import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static java.lang.Thread.sleep;
 import static org.hamcrest.CoreMatchers.anyOf;
 import static org.hamcrest.text.StringContains.containsString;
 
 /*
-    This is an Espresso UI test for SayHelloActivity of tutorial 6 (declarative version).
+    This is an Espresso UI test for SayHelloActivity of SayHello declarative tutorial.
     Uses AndroidJUnit4 as a test runner for running Espresso UI Tests. The test class (SayHelloActivity)
     extends class ActivityInstrumentationTestCase2 which allows us to run tests for specific activity.
     (here, it is SayHelloActivity which is passed as a genetic parameter). It also needs super constructor which
@@ -57,11 +56,9 @@ public class SayHelloActivityTest extends ActivityInstrumentationTestCase2<SayHe
 
     @Test
     public void testSayHello() throws InterruptedException {
-        onView(withId(R.id.editText)).perform(click()).perform(typeText("Espresso"));
-        sleep(3000);
+        onView(withId(R.id.editText)).perform(click()).perform(typeText("Hello, Espresso!"));
         onView(withId(R.id.button)).perform(click());
-        sleep(3000);
-        onView(withId(R.id.textView)).check(matches(anyOf(withText(containsString("Espresso")))));
+        onView(withId(R.id.textView)).check(matches(anyOf(withText(containsString("Hello, Espresso!")))));
     }
 }
 

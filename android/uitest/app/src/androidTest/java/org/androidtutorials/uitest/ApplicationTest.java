@@ -1,4 +1,4 @@
-package org.androidtutorials.sayhello.decl.uitest;
+package org.androidtutorials.uitest;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
