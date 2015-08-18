@@ -257,11 +257,12 @@
 
 	<application name="List">
       <files base="android/navigation/list">
-        <file name="app/src/main/java/org/androidtutorials/navigation/list/FruitListActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/navigation/list/ItemListActivity.java"/>
+        <file name="app/src/main/java/org/androidtutorials/navigation/list/ItemAdapter.java"/>
         <file name="app/src/main/res/layout/list_item.xml"/>
       </files>
-	<text>A simple Android application demonstrating using ListActivities and
-	ArrayAdapters.</text>
+	<text>Use a RecyclerView to display a list of items where each item is rendered
+        in a CardView.</text>
 	<xmlvm-status>Not working</xmlvm-status>
 	</application>
 

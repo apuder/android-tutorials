@@ -8,10 +8,6 @@ android {
         applicationId "org.androidtutorials.navigation.list"
         minSdkVersion 21
         targetSdkVersion 21
-        compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_5
-            targetCompatibility JavaVersion.VERSION_1_5
-        }
     }
 
     buildTypes {
@@ -19,5 +15,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+
+    dependencies {
+        repositories {
+            mavenCentral()
+        }
+        compile 'com.android.support:design:22.2.+'
+        compile 'com.android.support:appcompat-v7:22.2.+'
+        compile 'com.android.support:cardview-v7:22.2.+'
+        compile 'com.android.support:recyclerview-v7:22.2.+'
     }
 }
