@@ -46,11 +46,10 @@ public class SayHelloActivityTest extends ActivityInstrumentationTestCase2<SayHe
 
     /*
         In @Test block, onView() is a view matcher function that allows us to find a view in the current view hierarchy.
-        'editText' is the resource id of the Edit Text box in which we write some text. 'perform()' allows to perform 
-		 actions on a view and in this example, we are clicking on an editText in order to input a string "Espresso". 
-		 On clicking of button, we check if the textView is set with the text that contains "Espresso" as a substring and 
-		 the test is passed. Addition of sleep is optional but is sometimes useful in order get a better sense of what is 
-		 happening with the UI test. There are a number of view actions and view matcher's that Espresso framework allows: 
+        'editText' is the resource id of the Edit Text box in which we write some text. 'perform()' allows us to perform
+		 actions on a view and in this example, we are clicking on an editText in order to input a string "Hello, Espresso!".
+		 On clicking of button, we check if the textView is set with the text that contains "Hello, Espresso!" as a substring
+		 and the test is passed. There are a number of view actions and view matcher's that Espresso framework allows:
 		 https://code.google.com/p/android-test-kit/wiki/EspressoV2CheatSheet
      */
 
