@@ -137,7 +137,8 @@
 				select between a range of dates. -->
 			<DatePicker android:id="@+id/datepicker"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:layout_marginLeft="15dp" android:layout_marginRight="15dp" />
+				android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+				android:spinnersShown="true" />
 
 			<TextView android:id="@+id/classname_timePicker" android:text="@string/class_timepicker"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
