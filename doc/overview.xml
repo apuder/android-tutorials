@@ -270,7 +270,7 @@
         <files base="android/sensor/gyroscope">
           <file name="app/src/main/java/org/androidtutorials/sensor/gyroscope/GyroActivity.java" />
         </files>
-        <text>Simple Android aplication to demonstrate use of Gyroscope sensor in Android.</text>
+        <text>Simple Android application to demonstrate use of Gyroscope sensor in Android.</text>
       </application>
 	  
       <application name="GPS">
@@ -284,8 +284,18 @@
         <files base="android/sensor/camera">
           <file name="app/src/main/java/org/androidtutorials/sensor/camera/CameraActivity.java" />
         </files>
-        <text>Simple Android aplication to demonstrate use of camera in Android.</text>
+        <text>Simple Android application to demonstrate use of camera in Android.</text>
       </application>
+	  
+	  <application name="Camera 2">
+        <files base="android/sensor/camera2">
+          <file name="app/src/main/java/org/androidtutorials/sensor/camera2/CameraActivity.java" />
+	  <file name="app/src/main/AndroidManifest.xml" />
+	  <file name="app/src/main/res/layout/activity_camera.xml" />
+        </files>
+        <text>Simple Android application to demonstrate use of Camera 2 API in Android.</text>
+      </application>
+	  
 	  
       <application name="NFC Reader">
         <files base="android/sensor/nfcreader">
