@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Static list of menu items. A menu tag defines a container for menu items. A group
+    tag can be used to allow similar menu items to shared properties. Item tags are simply
+    the menu items themselves. Nesting a menu tag inside a item tag allows you to create
+    a submenu.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_1"
+            android:icon="@drawable/ic_itm1"
+            android:title="@string/item1" />
+        <item
+            android:id="@+id/item_2"
+
+            android:icon="@drawable/ic_itm2"
+            android:title="@string/item2" />
+        <item
+            android:id="@+id/item_3"
+
+            android:icon="@drawable/ic_itm3"
+            android:title="@string/item3" />
+        <item android:title="Sub Items Menu">
+            <menu>
+                <item
+                    android:id="@+id/item_4"
+                    android:icon="@drawable/ic_itm4"
+                    android:title="@string/item4" />
+                <item
+                    android:id="@+id/item_5"
+                    android:icon="@drawable/ic_itm5"
+                    android:title="@string/item5" />
+                <item
+                    android:id="@+id/item_6"
+                    android:icon="@drawable/ic_itm6"
+                    android:title="@string/item6" />
+            </menu>
+        </item>
+    </group>
+</menu>
