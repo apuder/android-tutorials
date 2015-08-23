@@ -110,7 +110,20 @@
 	<text>Application to demonstrate the User Interface widgets in Android</text>
 	<xmlvm-status>Not working</xmlvm-status>
 	</application>
-	
+
+	<application name="Navigation Drawer">
+      	  <files base="android/design/navigationdrawer">
+           <file name="app/src/main/java/org/androidtutorials/design/navigationdrawer/MainActivity.java"/>
+	   <file name="app/src/main/AndroidManifest.xml" />
+           <file name="app/src/main/res/layout/activity_main.xml"/>
+	   <file name="app/src/main/res/layout/navbar_header.xml"/>
+	   <file name="app/src/main/res/layout/toolbar.xml"/>
+           <file name="app/src/main/res/menu/menu_drawer.xml"/>
+      	  </files>
+	<text>Application to demonstrate the Usage of Android's Navigation Drawer</text>
+	<xmlvm-status>Not working</xmlvm-status>
+	</application>	
+
 	<application name="Alerts">
       <files base="android/alerts">
         <file name="app/src/main/java/org/androidtutorials/alert/AlertActivity.java"/>

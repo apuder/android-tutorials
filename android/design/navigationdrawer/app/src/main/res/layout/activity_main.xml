@@ -1,0 +1,39 @@
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/drawerChildContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Display Toolbar which is defined in /res/layout/toolbar -->
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <!-- Can be used to show different content when menu items are selected. -->
+        <FrameLayout
+            android:id="@+id/fragment_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"></FrameLayout>
+    </RelativeLayout>
+
+    <!-- Defines the structure of the drawer. Menu items
+         are defined in res/menu/menu_drawer.xml. The header is defined
+         in layout/navbar_header.xml-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:elevation="15dp"
+        app:headerLayout="@layout/navbar_header"
+        app:menu="@menu/menu_drawer"></android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
