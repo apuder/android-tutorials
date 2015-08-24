@@ -1,14 +1,15 @@
 package org.androidtutorials.alert;
 
-import android.app.Activity;
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.androidtutorials.alert.R;
 
 /**
  * This tutorial shows two different kinds of alerts: popup, modal dialogs and
@@ -21,8 +22,14 @@ import org.androidtutorials.alert.R;
  * appearance of a text that is displayed in the lower half of the screen. A
  * toast does not have a button and it is automatically removed from the screen
  * after a short timeout.
+ *
+ * The third type an alert is a Snackbar. Similar to a Toast, Snackbars show a small message about
+ * an operation but also have the ability to have actions attached to them. Just Like Toasts,
+ * Snackbars will appear at the bottom of the screen. A Snackbar can appear for a short amount of
+ * time and will be removed automatically. If however, Snackbar.LENGTH_INDEFINITE is passed into
+ * the make function, the the Snackbar will not disappear unless dismissed via an Action.
  */
-public class AlertActivity extends Activity {
+public class AlertActivity extends AppCompatActivity {
 
     private TextView lblAlertResult;
 
@@ -75,9 +82,30 @@ public class AlertActivity extends Activity {
         lblAlertResult.setText("");
         /*
          * This one-line statement is sufficient for rendering a toast. The
-         * toast will automatically removed from the screen after a short
+         * toast will automatically be removed from the screen after a short
          * timeout.
          */
         Toast.makeText(this, "This is Toast", Toast.LENGTH_LONG).show();
+    }
+
+    public void showSnackbar(View v){
+        lblAlertResult.setText("");
+        /*
+         * Similar to a Toast, a Snackbars provides a message about an operation. But also
+         * can have an action attached to it. A action can be added to the Snackbar by
+         * passing the name of the action and a View.OnClickerListener to setAction.
+         * For this example, a toast is shown when the Snackbar is dismissed.
+         */
+        final Snackbar sn = Snackbar.make(v, "This is a Snackbar", Snackbar.LENGTH_INDEFINITE);
+        sn.setAction("Dismiss", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sn.dismiss();
+                Toast.makeText(getApplicationContext(), "Snackbar Dismissed",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        sn.show();
     }
 }
