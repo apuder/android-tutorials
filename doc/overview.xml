@@ -249,16 +249,6 @@
 	</application>
 
 
-	<application name="TabBar">
-      <files base="android/navigation/tabbar">
-        <file name="app/src/main/java/org/androidtutorials/navigation/tabbar/TabBarActivity.java"/>
-        <file name="app/src/main/java/org/androidtutorials/navigation/tabbar/DisplayActivity.java"/>
-      </files>
-	<text>A simple Android application demonstrating creating and handling TabBars
-	to navigate through the application.</text>
-	<xmlvm-status>Not working</xmlvm-status>
-	</application>
-
 	<application name="List">
       <files base="android/navigation/list">
         <file name="app/src/main/java/org/androidtutorials/navigation/list/ItemListActivity.java"/>
