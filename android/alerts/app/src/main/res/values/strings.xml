@@ -5,5 +5,7 @@
     <string name="app_name">Alerts</string>
     <string name="show_text">Show toast</string>
     <string name="show_alert">Show alert</string>
-
+    <string name="dismiss">Dismiss</string>
+    <string name="sb_msg">Button Has Been Clicked</string>
+    <string name="button_text">Show Snackbar</string>
 </resources>
