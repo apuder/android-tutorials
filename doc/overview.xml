@@ -293,7 +293,16 @@
         </files>
         <text>Show various ways of making data persistent.</text>
       </application>
-	  
+
+      <application name="ContentProvider">
+          <files base="android/provider">
+              <file name="app/src/main/java/org/androidtutorials/provider/MainActivity.java" />
+              <file name="app/src/main/java/org/androidtutorials/provider/EmployeeProvider.java" />
+          </files>
+          <text>Demonstrates the implementation of a ContentProvider that can be accessed from
+              other Android applications.</text>
+      </application>
+      
       <application name="Immersive">
         <files base="android/immersive">
           <file name="app/src/main/java/org/androidtutorials/immersive/ImmersiveActivity.java" />
