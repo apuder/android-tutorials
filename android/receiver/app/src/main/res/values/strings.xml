@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Receiver</string>
+    <string name="clear">Clear custom broadcast label</string>
+
+    <string name="text_custom_msg">Send custom broadcast</string>
+    <string name="CustomLabel">Received custom broadcast?</string>
+
+    <string name="BTStateLabel">Bluetooth state: </string>
+    <string name="BTDefLabel">Toggle BT to update</string>
+
+    <string name="WiFiStateLabel">Wi-Fi state: </string>
+    <string name="WiFiDefLabel">Toggle WiFi to update</string>
+</resources>
