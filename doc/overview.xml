@@ -212,6 +212,33 @@
         <text>Demonstrates the use of a bound service.</text>
       </application>
 	  
+      <application name="Storage">
+          <files base="android/storage">
+              <file name="app/src/main/java/org/androidtutorials/storage/MainActivity.java" />
+              <file name="app/src/main/java/org/androidtutorials/storage/sql/DatabaseHandler.java" />
+              <file name="app/src/main/java/org/androidtutorials/storage/sql/Employee.java" />
+          </files>
+          <text>Show various ways of making data persistent.</text>
+      </application>
+      
+      <application name="ContentProvider">
+          <files base="android/provider">
+              <file name="app/src/main/java/org/androidtutorials/provider/MainActivity.java" />
+              <file name="app/src/main/java/org/androidtutorials/provider/EmployeeProvider.java" />
+          </files>
+          <text>Demonstrates the implementation of a ContentProvider that can be accessed from
+              other Android applications.</text>
+      </application>
+      
+      <application name="BroadcastReceiver">
+          <files base="android/receiver">
+              <file name="app/src/main/java/org/androidtutorials/receiver/MainActivity.java" />
+              <file name="app/src/main/java/org/androidtutorials/receiver/PowerConnBroadcastReceiver.java" />
+              <file name="app/src/main/AndroidManifest.xml" />
+          </files>
+          <text>An application to demonstrate BroadcastReceiver in Android.</text>
+      </application>
+      
       <application name="Settings">
         <files base="android/settings">
           <file name="app/src/main/java/org/androidtutorials/settings/MainActivity.java" />
@@ -285,24 +312,6 @@
         <text>Uses property animation to bounce a ball across the screen.</text>
       </application>
 	  
-      <application name="Storage">
-        <files base="android/storage">
-          <file name="app/src/main/java/org/androidtutorials/storage/MainActivity.java" />
-          <file name="app/src/main/java/org/androidtutorials/storage/sql/DatabaseHandler.java" />
-          <file name="app/src/main/java/org/androidtutorials/storage/sql/Employee.java" />
-        </files>
-        <text>Show various ways of making data persistent.</text>
-      </application>
-
-      <application name="ContentProvider">
-          <files base="android/provider">
-              <file name="app/src/main/java/org/androidtutorials/provider/MainActivity.java" />
-              <file name="app/src/main/java/org/androidtutorials/provider/EmployeeProvider.java" />
-          </files>
-          <text>Demonstrates the implementation of a ContentProvider that can be accessed from
-              other Android applications.</text>
-      </application>
-      
       <application name="Immersive">
         <files base="android/immersive">
           <file name="app/src/main/java/org/androidtutorials/immersive/ImmersiveActivity.java" />
@@ -331,15 +340,6 @@
           <file name="app/src/main/res/layout/main.xml" />
         </files>
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
-      </application>
-	  
-      <application name="BroadcastReceiver">
-        <files base="android/receiver">
-          <file name="app/src/main/java/org/androidtutorials/receiver/MainActivity.java" />
-          <file name="app/src/main/java/org/androidtutorials/receiver/PowerConnBroadcastReceiver.java" />
-          <file name="app/src/main/AndroidManifest.xml" />
-        </files>
-        <text>An application to demonstrate BroadcastReceiver in Android.</text>
       </application>
 	  
     </tutorials>
