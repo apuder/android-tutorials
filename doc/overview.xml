@@ -333,6 +333,15 @@
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
       </application>
 	  
+      <application name="BroadcastReceiver">
+        <files base="android/receiver">
+          <file name="app/src/main/java/org/androidtutorials/receiver/MainActivity.java" />
+          <file name="app/src/main/java/org/androidtutorials/receiver/PowerConnBroadcastReceiver.java" />
+          <file name="app/src/main/AndroidManifest.xml" />
+        </files>
+        <text>An application to demonstrate BroadcastReceiver in Android.</text>
+      </application>
+	  
     </tutorials>
 	
   </android-tutorials>
