@@ -351,6 +351,27 @@
         </files>
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
       </application>
+
+      <application name="HelloWearable">
+        <files base="android/Wearable/HelloWearable">
+          <file name="app/src/main/java/org/androidtutorials/HelloWorld/MainActivity.java" />
+          <file name="app/src/main/res/layout/activity_main.xml" />
+	  <file name="app/src/main/res/layout/rect_activity_main.xml" />
+          <file name="app/src/main/res/layout/round_activity_main.xml" />
+	</files>
+        <text> Hello World App for Android Wear with screen type detection.</text>
+      </application>
+
+
+      <application name="HelloWearable-CardView">
+        <files base="android/Wearable/HelloWearable-CardView">
+          <file name="app/src/main/java/org/androidtutorials/HelloWorld/MainActivity.java" />
+          <file name="app/src/main/res/layout/activity_main.xml" />
+	  <file name="app/src/main/res/layout/rect_activity_main.xml" />
+          <file name="app/src/main/res/layout/round_activity_main.xml" />
+	</files>
+        <text> Hello World App for Android Wear with screen type detection. Text Shown on a Card Frame.</text>
+      </application>
 	  
     </tutorials>
 	

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="square_top_margin">24dp</dimen>
+    <dimen name="square_left_margin">16dp</dimen>
+
+    <dimen name="round_top_margin">34dp</dimen>
+    <dimen name="round_left_margin">34dp</dimen>
+</resources>
