@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_custom_msg"
+        android:id="@+id/buttonBroadcast"
+        android:clickable="true"
+        android:longClickable="false"
+        android:onClick="sendCustomBroadcast"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCustom"
+        android:text="No"
+        android:layout_marginTop="45dp"
+        android:textColor="#ff0000"
+        android:layout_below="@+id/buttonBroadcast"
+        android:layout_alignEnd="@+id/textViewBT"
+        android:layout_marginEnd="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewBT"
+        android:text="@string/BTDefLabel"
+        android:layout_marginTop="51dp"
+        android:textColor="#ff0000"
+        android:layout_below="@+id/textViewCustom"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewWiFi"
+        android:text="@string/WiFiDefLabel"
+        android:textColor="#ff0000"
+        android:layout_alignTop="@+id/textViewLabelWiFi"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CustomLabel"
+        android:id="@+id/textViewLabelCustom"
+        android:layout_above="@+id/textViewBT"
+        android:layout_alignParentStart="true"
+        android:autoText="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BTStateLabel"
+        android:id="@+id/textViewLabelBT"
+        android:autoText="false"
+        android:layout_alignTop="@+id/textViewBT"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WiFiStateLabel"
+        android:id="@+id/textViewLabelWiFi"
+        android:autoText="false"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textViewLabelBT"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoked by: "
+        android:id="@+id/textViewLabelParent"
+        android:layout_marginTop="43dp"
+        android:autoText="false"
+        android:layout_below="@+id/textViewLabelWiFi"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect or disconnect to update"
+        android:id="@+id/textViewParent"
+        android:textColor="#ff0000"
+        android:layout_alignTop="@+id/textViewLabelParent"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
