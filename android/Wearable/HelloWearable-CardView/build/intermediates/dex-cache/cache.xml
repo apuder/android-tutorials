@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\amr alpha\Desktop\HelloWearable-CardView\Wearable\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\amr alpha\Desktop\HelloWearable-CardView\Wearable\build\intermediates\pre-dexed\debug\classes-915ebcb99fcebf348f964e264cbd142fc64632c5.jar" />
+    </item>
+
+</items>

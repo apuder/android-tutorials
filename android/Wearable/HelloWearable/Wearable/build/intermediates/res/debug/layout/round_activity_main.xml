@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/round_top_margin"
+    android:paddingLeft="@dimen/round_left_margin"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear_round">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Hello Round World!"/>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/amr%20alpha/Desktop/HelloWearable/Wearable/src/main/res/layout/round_activity_main.xml -->
