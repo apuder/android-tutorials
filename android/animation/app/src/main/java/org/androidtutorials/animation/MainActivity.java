@@ -1,4 +1,3 @@
-
 package org.androidtutorials.animation;
 
 import android.animation.AnimatorInflater;
@@ -8,8 +7,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.animation.BounceInterpolator;
 import android.widget.ImageView;
-
-import org.androidtutorials.animation.R;
 
 /**
  * Simple example for the animation framework. A soccer ball bounces from the
