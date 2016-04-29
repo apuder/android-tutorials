@@ -126,6 +126,18 @@
           <text>Use a RecyclerView to display a list of items where each item is rendered
               in a CardView. Also shows usage of an Floating Action Button.</text>
       </application>
+
+       <application name="ItemClickSupport">
+          <files base="android/navigation/clicksupport">
+              <file name="app/src/main/java/org/androidtutorials/clicksupport/MainActivity.java" />
+              <file name="app/src/main/java/org/androidtutorials/clicksupport/ItemListAdapter.java" />
+              <file name="app/src/main/java/org/androidtutorials/clicksupport/ItemClickSupport.java" />
+              <file name="app/src/main/res/layout/activity_main.xml" />
+              <file name="app/src/main/res/layout/list_item.xml" />
+          </files>
+          <text>Use a ItemClickSupport to provide custom item clicks to the RecyclerView without passing
+            around the click listeners and to decouple the code from Adapter</text>
+      </application>
       
       <application name="Navigation Drawer">
         <files base="android/design/navigationdrawer">
