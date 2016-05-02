@@ -9,14 +9,14 @@
      (see class MyImageView that implements those getters and setters) -->
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <objectAnimator
-        android:propertyName="xFraction"
         android:duration="5000"
+        android:propertyName="xFraction"
         android:valueTo="1"
         android:valueType="floatType"/>
     <objectAnimator
-        android:propertyName="yFraction"
-        android:interpolator="@android:anim/bounce_interpolator"
         android:duration="5000"
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:propertyName="yFraction"
         android:valueTo="1"
         android:valueType="floatType"/>
 </set>
