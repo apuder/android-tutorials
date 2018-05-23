@@ -351,6 +351,20 @@
         </files>
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
       </application>
+      
+        <application name="RxJava with RetroFit">
+        <files base="android/RxJavaWithRetrofitDemo-master">
+          <file name="app/src/main/java/com/example/makkhay/rxjavademo/MainActivity.java" />
+          <file name="app/build.gradle" />
+          <file name="app/src/main/java/com/example/makkhay/rxjavademo/Model/Service/GitHubClient.java" />    
+        <file name="app/src/main/java/com/example/makkhay/rxjavademo/Model/Service/GithubService.java" />    
+          <file name="app/src/main/java/com/example/makkhay/rxjavademo/Adapter/GitHubRepoAdapter.java"/>
+          <file name="app/src/main/java/com/example/makkhay/rxjavademo/Model/GithubRepos.java" />
+        </files>
+        <text>RxJava with Retrofit application that fetches github users' starred reopo</text>
+      </application>    
+        
+          
 	  
     </tutorials>
 	
