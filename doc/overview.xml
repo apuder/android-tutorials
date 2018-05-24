@@ -351,6 +351,19 @@
         </files>
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
       </application>
+
+      <application name="Conductor">
+        <files base="android/conductor">
+          <file name="app/src/main/java/org/androidtutorials/conductor/MainActivity.java" />
+          <file name="app/src/main/res/layout/activity_main.xml" />
+          <file name="app/src/main/java/org/androidtutorials/conductor/Layout1Controller.java" />
+          <file name="app/src/main/res/layout/controller_1_layout.xml" />
+          <file name="app/src/main/java/org/androidtutorials/conductor/Layout2Controller.java" />
+          <file name="app/src/main/res/layout/controller_2_layout.xml" />
+          <file name="app/build.gradle" />
+        </files>
+        <text>Demonstrates use of the Conductor framework as an alternative to Fragments.</text>
+      </application>
 	  
     </tutorials>
 	

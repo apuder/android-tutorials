@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtutorials.conductor.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--
+                Two buttons that will be used in this demonstration to trigger new Router transactions,
+                thus bringing forward new layouts.
+            -->
+            <Button
+                android:id="@+id/layout_1_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Layout 1"
+                />
+
+            <Button
+                android:id="@+id/layout_2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Layout 2"
+                />
+
+        </LinearLayout>
+
+
+
+        <!--
+            This is a custom ViewGroup created by the people at Square.
+            This is the "container" that contains the views passed from our Controllers.
+        -->
+        <com.bluelinelabs.conductor.ChangeHandlerFrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
