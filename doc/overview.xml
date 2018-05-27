@@ -351,6 +351,19 @@
         </files>
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
       </application>
+
+      <application name="Room Persistence Library">
+        <files base="android/room">
+          <file name="app/build.gradle" />
+          <file name="app/src/main/java/csc780/sfsu/edu/roompersistencelibrary/AppDatabase.java" />
+          <file name="app/src/main/java/csc780/sfsu/edu/roompersistencelibrary/DataRepository.java" />
+          <file name="app/src/main/java/csc780/sfsu/edu/roompersistencelibrary/MainActivity.java" />
+          <file name="app/src/main/java/csc780/sfsu/edu/roompersistencelibrary/Message.java" />
+          <file name="app/src/main/java/csc780/sfsu/edu/roompersistencelibrary/MessageDao.java" />
+          <file name="app/src/main/java/csc780/sfsu/edu/roompersistencelibrary/MessageViewModel.java" />
+        </files>
+        <text>App to create message entities using Room Persistence Library and Architecture Components, such as ViewModels, LiveData and Repositories.</text>
+      </application>
 	  
     </tutorials>
 	
