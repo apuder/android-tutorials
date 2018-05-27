@@ -1,0 +1,75 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    app:cardMaxElevation="3dp"
+    app:cardElevation="4dp"
+    app:contentPadding="10dp"
+    app:contentPaddingBottom="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/img"
+            android:background="@drawable/background"
+            android:contentDescription="CardImageViewDesc" />
+
+        <TextView
+            android:id="@+id/text_repo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            tools:text="Cropper"/>
+
+        <TextView
+            android:id="@+id/text_repo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/text_repo_name"
+            tools:text="Android widget for cropping and rotating an image."/>
+
+        <TextView
+            android:id="@+id/text_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/img"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Language: Java"/>
+
+        <TextView
+            android:id="@+id/text_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_alignParentRight="true"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Stars: 1953"/>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
