@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RxJavaTutorial</string>
+    <string name="empty_text">Empty Text</string>
+</resources>

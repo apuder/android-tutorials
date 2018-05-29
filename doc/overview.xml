@@ -351,9 +351,20 @@
         </files>
         <text>UI testing tutorial for SayHello declarative version using Espresso.</text>
       </application>
+
+      <application name="RxJava Tutorial">
+        <files base="android/rxJava">
+          <file name="app/src/main/java/com/sfsu/ajinkyachalke/rxjavatutorial/MainActivity.java" />
+          <file name="app/build.gradle" />
+          <file name="app/src/main/res/layout/activity_main.xml" />
+          <file name="app/src/main/res/layout/card.xml" /> 
+        </files>
+        <text>RxJava tutorial for demonstrating usage of RxJava in Android</text>
+      </application>
 	  
     </tutorials>
 	
   </android-tutorials>
   
 </tutorial>
+
